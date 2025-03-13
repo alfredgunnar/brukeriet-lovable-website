@@ -90,7 +90,7 @@ const LocationSection = () => {
                   <div>
                     <h3 className="text-lg font-medium mb-2 text-custom-terra">E-post</h3>
                     <p className="text-custom-brown">
-                      hej@vintagehaven.com
+                      hej@brukeriet.com
                     </p>
                   </div>
                 </div>
@@ -100,17 +100,11 @@ const LocationSection = () => {
           
           <div>
             <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-lg image-container">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.8035882855097!2d18.068340800000003!3d59.3254616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5c3f0fe823%3A0x92befa196a759e0!2sGamla%20Stan%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1699629573426!5m2!1ssv!2sse" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Vintage Haven Plats Karta"
+              <img 
+                src="/lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png" 
+                alt="Brukeriet butiksinredning" 
                 className="w-full h-full object-cover"
-              ></iframe>
+              />
             </div>
           </div>
         </div>

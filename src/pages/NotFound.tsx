@@ -18,7 +18,7 @@ const NotFound = () => {
         <h1 className="text-6xl font-bold mb-4 text-custom-terra">404</h1>
         <p className="text-xl text-custom-brown mb-6">Hoppsan! Sidan hittades inte</p>
         <a href="/" className="px-6 py-3 bg-custom-gold text-custom-cream rounded-md hover:bg-custom-gold/90 transition-all uppercase tracking-wider">
-          Tillbaka till Startsidan
+          Tillbaka till Brukeriet
         </a>
       </div>
     </div>

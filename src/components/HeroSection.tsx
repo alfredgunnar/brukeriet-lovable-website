@@ -22,7 +22,7 @@ const HeroSection = () => {
         ref={containerRef}
         className="absolute inset-0 w-full h-full"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1553454466-b9c6d0e4a628?q=80&w=2080&auto=format&fit=crop)',
+          backgroundImage: 'url(/lovable-uploads/c9d62145-1b39-4674-873e-31f54ee294ff.png)',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           transform: 'translateZ(0)',

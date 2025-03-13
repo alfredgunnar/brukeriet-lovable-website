@@ -29,9 +29,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a 
           href="#" 
-          className="text-2xl font-medium tracking-tight text-custom-terra hover:text-custom-gold transition-colors"
+          className="flex items-center"
         >
-          Vintage Haven
+          <img 
+            src="/lovable-uploads/e8bbdeb1-097c-4101-846d-828f9bdafaa3.png" 
+            alt="Brukeriet" 
+            className="h-10 object-contain"
+          />
         </a>
         
         <div className="hidden md:flex items-center space-x-8">

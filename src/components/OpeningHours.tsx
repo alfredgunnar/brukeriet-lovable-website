@@ -83,7 +83,7 @@ const OpeningHours = () => {
             <div className="mt-8 pt-6 border-t border-custom-terra/10 text-center">
               <p className="text-sm text-custom-brown">
                 Specialbokningar finns tillgängliga för inredningsarkitekter och kommersiella projekt.
-                <br />Kontakta oss på <span className="text-custom-terra">bokning@vintagehaven.com</span>
+                <br />Kontakta oss på <span className="text-custom-terra">bokning@brukeriet.com</span>
               </p>
             </div>
           </div>

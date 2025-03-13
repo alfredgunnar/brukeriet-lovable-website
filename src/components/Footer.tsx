@@ -9,7 +9,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-medium mb-4">Vintage Haven</h3>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/e8bbdeb1-097c-4101-846d-828f9bdafaa3.png" 
+                alt="Brukeriet" 
+                className="h-10 object-contain"
+              />
+            </div>
             <p className="text-custom-cream/80 max-w-md">
               Handplockade vintagemöbler och inredning för kräsna husägare, inredningsarkitekter 
               och stilentusiaster som uppskattar det förflutnas tidlösa skönhet.
@@ -85,7 +91,7 @@ const Footer = () => {
         
         <div className="mt-16 pt-8 border-t border-custom-cream/20 flex flex-col md:flex-row justify-between items-center">
           <p className="text-custom-cream/60 text-sm">
-            &copy; {currentYear} Vintage Haven. Alla rättigheter förbehållna.
+            &copy; {currentYear} Brukeriet. Alla rättigheter förbehållna.
           </p>
           
           <div className="mt-4 md:mt-0 flex space-x-6">

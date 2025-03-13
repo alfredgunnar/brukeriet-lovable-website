@@ -51,7 +51,7 @@ const VisionSection = () => {
               <div className="w-16 h-[2px] bg-custom-gold"></div>
               
               <p className="text-custom-brown">
-                På Vintage Haven tror vi att de vackraste interiörerna berättar en historia. Varje möbel i vår 
+                På Brukeriet tror vi att de vackraste interiörerna berättar en historia. Varje möbel i vår 
                 kollektion har handplockats för sin karaktär, hantverk och den unika energin den tillför ett rum.
               </p>
               
@@ -71,8 +71,8 @@ const VisionSection = () => {
           <div className="order-1 lg:order-2">
             <div className="relative h-[500px] w-full image-container rounded-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=2158&auto=format&fit=crop" 
-                alt="Vintage interiör med trämöbler och detaljer" 
+                src="/lovable-uploads/fd89ec7c-7967-42ef-a8d1-b9a93e43ac36.png" 
+                alt="Vintage interiör med designmöbler och inredning" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
