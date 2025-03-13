@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 36 33% 97%;
-    --foreground: 30 15% 22%;
+    --background: 39 21% 95%;
+    --foreground: 24 20% 21%;
 
-    --card: 36 33% 97%;
-    --card-foreground: 30 15% 22%;
+    --card: 39 21% 95%;
+    --card-foreground: 24 20% 21%;
 
-    --popover: 36 33% 97%;
-    --popover-foreground: 30 15% 22%;
+    --popover: 39 21% 95%;
+    --popover-foreground: 24 20% 21%;
 
-    --primary: 32 18% 54%;
-    --primary-foreground: 36 33% 97%;
+    --primary: 13 53% 31%;
+    --primary-foreground: 39 26% 85%;
 
-    --secondary: 30 25% 75%;
-    --secondary-foreground: 30 15% 22%;
+    --secondary: 30 48% 47%;
+    --secondary-foreground: 39 26% 85%;
 
-    --muted: 32 18% 90%;
-    --muted-foreground: 30 10% 40%;
+    --muted: 39 26% 85%;
+    --muted-foreground: 24 10% 40%;
 
-    --accent: 90 15% 47%;
-    --accent-foreground: 36 33% 97%;
+    --accent: 24 18% 21%;
+    --accent-foreground: 39 26% 85%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 36 33% 97%;
+    --destructive-foreground: 39 26% 85%;
 
-    --border: 32 18% 85%;
-    --input: 32 18% 80%;
-    --ring: 32 18% 54%;
+    --border: 39 26% 80%;
+    --input: 39 26% 75%;
+    --ring: 13 53% 31%;
 
     --radius: 0.5rem;
   }
@@ -47,11 +47,11 @@
   }
   
   body {
-    @apply bg-vintage-cream text-foreground font-sans antialiased;
+    @apply bg-custom-cream text-foreground font-sans antialiased;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-medium;
+    @apply font-sans font-medium;
   }
   
   /* Custom scrollbar */
@@ -64,11 +64,11 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    @apply bg-vintage-taupe/50 rounded-full transition-colors;
+    @apply bg-custom-terra/50 rounded-full transition-colors;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-vintage-brown/70;
+    @apply bg-custom-brown/70;
   }
   
   /* Section transition styles */

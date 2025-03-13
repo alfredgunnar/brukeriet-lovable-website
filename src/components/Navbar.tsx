@@ -22,14 +22,14 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 ease-in-out px-4 lg:px-8",
         scrolled 
-          ? "py-3 bg-vintage-cream/90 backdrop-blur-md shadow-sm" 
+          ? "py-3 bg-custom-cream/90 backdrop-blur-md shadow-sm" 
           : "py-6 bg-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a 
           href="#" 
-          className="font-serif text-2xl font-medium tracking-tight text-vintage-brown hover:text-vintage-terracotta transition-colors"
+          className="text-2xl font-medium tracking-tight text-custom-terra hover:text-custom-gold transition-colors"
         >
           Vintage Haven
         </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-medium text-vintage-brown hover:text-vintage-terracotta transition-colors"
+              className="text-sm font-medium uppercase tracking-wide text-custom-brown hover:text-custom-gold transition-colors"
             >
               {item.name}
             </a>

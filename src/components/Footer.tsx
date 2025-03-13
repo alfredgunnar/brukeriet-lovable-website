@@ -5,12 +5,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-vintage-brown text-white py-16 px-6">
+    <footer className="bg-custom-terra text-custom-cream py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2">
-            <h3 className="font-serif text-2xl font-medium mb-4">Vintage Haven</h3>
-            <p className="text-white/80 max-w-md">
+            <h3 className="text-2xl font-medium mb-4">Vintage Haven</h3>
+            <p className="text-custom-cream/80 max-w-md">
               Handplockade vintagemöbler och inredning för kräsna husägare, inredningsarkitekter 
               och stilentusiaster som uppskattar det förflutnas tidlösa skönhet.
             </p>
@@ -18,21 +18,21 @@ const Footer = () => {
             <div className="flex space-x-4 mt-6">
               <a 
                 href="#" 
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                className="w-10 h-10 rounded-full bg-custom-gold flex items-center justify-center hover:bg-custom-gold/80 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                className="w-10 h-10 rounded-full bg-custom-gold flex items-center justify-center hover:bg-custom-gold/80 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                className="w-10 h-10 rounded-full bg-custom-gold flex items-center justify-center hover:bg-custom-gold/80 transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-medium text-lg mb-4">Snabblänkar</h4>
+            <h4 className="font-medium text-lg mb-4 uppercase tracking-wider">Snabblänkar</h4>
             <ul className="space-y-2">
               {[
                 { name: 'Vår Vision', href: '#vision' },
@@ -52,7 +52,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <a 
                     href={item.href} 
-                    className="text-white/70 hover:text-white transition-colors"
+                    className="text-custom-cream/70 hover:text-custom-cream transition-colors"
                   >
                     {item.name}
                   </a>
@@ -62,8 +62,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-medium text-lg mb-4">Nyhetsbrev</h4>
-            <p className="text-white/80 mb-4">
+            <h4 className="font-medium text-lg mb-4 uppercase tracking-wider">Nyhetsbrev</h4>
+            <p className="text-custom-cream/80 mb-4">
               Prenumerera för att få uppdateringar om nya varor och specialevenemang.
             </p>
             
@@ -71,11 +71,11 @@ const Footer = () => {
               <input 
                 type="email" 
                 placeholder="Din e-postadress" 
-                className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-vintage-terracotta text-white"
+                className="w-full px-4 py-2 bg-custom-cream/10 border border-custom-cream/20 rounded-md placeholder:text-custom-cream/50 focus:outline-none focus:ring-2 focus:ring-custom-gold text-custom-cream"
               />
               <button 
                 type="submit"
-                className="w-full py-2 bg-vintage-cream text-vintage-brown font-medium rounded-md hover:bg-vintage-cream/90 transition-colors"
+                className="w-full py-2 bg-custom-gold text-custom-cream font-medium rounded-md hover:bg-custom-gold/90 transition-colors uppercase tracking-wider"
               >
                 Prenumerera
               </button>
@@ -83,16 +83,16 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-16 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/60 text-sm">
+        <div className="mt-16 pt-8 border-t border-custom-cream/20 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-custom-cream/60 text-sm">
             &copy; {currentYear} Vintage Haven. Alla rättigheter förbehållna.
           </p>
           
           <div className="mt-4 md:mt-0 flex space-x-6">
-            <a href="#" className="text-white/60 text-sm hover:text-white transition-colors">
+            <a href="#" className="text-custom-cream/60 text-sm hover:text-custom-cream transition-colors">
               Integritetspolicy
             </a>
-            <a href="#" className="text-white/60 text-sm hover:text-white transition-colors">
+            <a href="#" className="text-custom-cream/60 text-sm hover:text-custom-cream transition-colors">
               Användarvillkor
             </a>
           </div>
