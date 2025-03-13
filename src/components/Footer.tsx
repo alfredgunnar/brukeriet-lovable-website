@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <h3 className="font-serif text-2xl font-medium mb-4">Vintage Haven</h3>
             <p className="text-white/80 max-w-md">
-              Curated vintage furniture and décor for discerning homeowners, interior designers, 
-              and style enthusiasts who appreciate the timeless beauty of the past.
+              Handplockade vintagemöbler och inredning för kräsna husägare, inredningsarkitekter 
+              och stilentusiaster som uppskattar det förflutnas tidlösa skönhet.
             </p>
             
             <div className="flex space-x-4 mt-6">
@@ -41,13 +41,13 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-medium text-lg mb-4">Quick Links</h4>
+            <h4 className="font-medium text-lg mb-4">Snabblänkar</h4>
             <ul className="space-y-2">
               {[
-                { name: 'Our Vision', href: '#vision' },
-                { name: 'Opening Hours', href: '#hours' },
-                { name: 'Location', href: '#location' },
-                { name: 'Contact Us', href: '#' },
+                { name: 'Vår Vision', href: '#vision' },
+                { name: 'Öppettider', href: '#hours' },
+                { name: 'Hitta Hit', href: '#location' },
+                { name: 'Kontakta Oss', href: '#' },
               ].map((item) => (
                 <li key={item.name}>
                   <a 
@@ -62,22 +62,22 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-medium text-lg mb-4">Newsletter</h4>
+            <h4 className="font-medium text-lg mb-4">Nyhetsbrev</h4>
             <p className="text-white/80 mb-4">
-              Subscribe to receive updates on new arrivals and special events.
+              Prenumerera för att få uppdateringar om nya varor och specialevenemang.
             </p>
             
             <form onSubmit={(e) => e.preventDefault()} className="space-y-3">
               <input 
                 type="email" 
-                placeholder="Your email address" 
+                placeholder="Din e-postadress" 
                 className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-vintage-terracotta text-white"
               />
               <button 
                 type="submit"
                 className="w-full py-2 bg-vintage-cream text-vintage-brown font-medium rounded-md hover:bg-vintage-cream/90 transition-colors"
               >
-                Subscribe
+                Prenumerera
               </button>
             </form>
           </div>
@@ -85,15 +85,15 @@ const Footer = () => {
         
         <div className="mt-16 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm">
-            &copy; {currentYear} Vintage Haven. All rights reserved.
+            &copy; {currentYear} Vintage Haven. Alla rättigheter förbehållna.
           </p>
           
           <div className="mt-4 md:mt-0 flex space-x-6">
             <a href="#" className="text-white/60 text-sm hover:text-white transition-colors">
-              Privacy Policy
+              Integritetspolicy
             </a>
             <a href="#" className="text-white/60 text-sm hover:text-white transition-colors">
-              Terms of Service
+              Användarvillkor
             </a>
           </div>
         </div>

@@ -37,8 +37,8 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           {[
             { name: 'Vision', href: '#vision' },
-            { name: 'Hours', href: '#hours' },
-            { name: 'Location', href: '#location' },
+            { name: 'Öppettider', href: '#hours' },
+            { name: 'Hitta hit', href: '#location' },
           ].map((item) => (
             <a
               key={item.name}

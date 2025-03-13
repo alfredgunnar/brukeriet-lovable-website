@@ -41,30 +41,29 @@ const VisionSection = () => {
           <div className="order-2 lg:order-1">
             <div className="space-y-6">
               <span className="inline-block px-3 py-1 text-xs font-sans tracking-widest uppercase bg-vintage-green/10 text-vintage-green rounded-full">
-                Our Vision
+                Vår Vision
               </span>
               
               <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight">
-                Preserving the beauty of the past for today's living spaces
+                Vi bevarar det förflutnas skönhet för dagens livsmiljöer
               </h2>
               
               <div className="w-16 h-[2px] bg-vintage-terracotta"></div>
               
               <p className="text-muted-foreground">
-                At Vintage Haven, we believe that the most beautiful interiors tell a story. Every piece in our 
-                collection has been handpicked for its character, craftsmanship, and the unique energy it brings 
-                to a space.
+                På Vintage Haven tror vi att de vackraste interiörerna berättar en historia. Varje möbel i vår 
+                kollektion har handplockats för sin karaktär, hantverk och den unika energin den tillför ett rum.
               </p>
               
               <p className="text-muted-foreground">
-                Our mission is to rescue exceptional vintage furnishings and décor from the past, restoring them 
-                to their original glory while giving them new life in contemporary homes. We appreciate the 
-                patina that comes with age – the small imperfections that reveal an object's journey through time.
+                Vår mission är att rädda exceptionella vintagemöbler och inredning från förr, återställa dem 
+                till sin ursprungliga glans och samtidigt ge dem nytt liv i moderna hem. Vi uppskattar 
+                patinan som kommer med ålder – de små imperfektionerna som avslöjar ett föremåls resa genom tiden.
               </p>
               
               <p className="text-vintage-brown font-medium">
-                We invite you to discover pieces that resonate with your personal style and will become treasured 
-                elements of your home for generations to come.
+                Vi bjuder in dig att upptäcka möbler som resonerar med din personliga stil och som blir 
+                värdefulla inslag i ditt hem för generationer framöver.
               </p>
             </div>
           </div>
@@ -73,7 +72,7 @@ const VisionSection = () => {
             <div className="relative h-[500px] w-full image-container rounded-lg overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop" 
-                alt="Vintage interior with wooden furniture and plants" 
+                alt="Vintage interiör med trämöbler och växter" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/10"></div>

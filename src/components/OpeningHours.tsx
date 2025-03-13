@@ -31,13 +31,13 @@ const OpeningHours = () => {
   }, []);
 
   const hours = [
-    { day: 'Monday', hours: '10:00 AM - 6:00 PM' },
-    { day: 'Tuesday', hours: '10:00 AM - 6:00 PM' },
-    { day: 'Wednesday', hours: '10:00 AM - 6:00 PM' },
-    { day: 'Thursday', hours: '10:00 AM - 7:00 PM' },
-    { day: 'Friday', hours: '10:00 AM - 7:00 PM' },
-    { day: 'Saturday', hours: '9:00 AM - 8:00 PM' },
-    { day: 'Sunday', hours: '11:00 AM - 5:00 PM' },
+    { day: 'Måndag', hours: '10:00 - 18:00' },
+    { day: 'Tisdag', hours: '10:00 - 18:00' },
+    { day: 'Onsdag', hours: '10:00 - 18:00' },
+    { day: 'Torsdag', hours: '10:00 - 19:00' },
+    { day: 'Fredag', hours: '10:00 - 19:00' },
+    { day: 'Lördag', hours: '09:00 - 20:00' },
+    { day: 'Söndag', hours: '11:00 - 17:00' },
   ];
 
   return (
@@ -50,11 +50,11 @@ const OpeningHours = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 text-xs font-sans tracking-widest uppercase bg-vintage-brown/10 text-vintage-brown rounded-full">
-            Visit Us
+            Besök Oss
           </span>
           
           <h2 className="text-3xl md:text-4xl font-serif font-medium mt-4 mb-6 leading-tight">
-            Opening Hours
+            Öppettider
           </h2>
           
           <div className="w-16 h-[2px] bg-vintage-terracotta mx-auto"></div>
@@ -82,8 +82,8 @@ const OpeningHours = () => {
             
             <div className="mt-8 pt-6 border-t border-vintage-taupe/20 text-center">
               <p className="text-sm text-muted-foreground">
-                Special appointments available for interior designers and commercial projects.
-                <br />Contact us at <span className="text-vintage-brown">appointments@vintagehaven.com</span>
+                Specialbokningar finns tillgängliga för inredningsarkitekter och kommersiella projekt.
+                <br />Kontakta oss på <span className="text-vintage-brown">bokning@vintagehaven.com</span>
               </p>
             </div>
           </div>

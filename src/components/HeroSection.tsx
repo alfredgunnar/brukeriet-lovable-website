@@ -39,11 +39,11 @@ const HeroSection = () => {
         </span>
         
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-medium mb-4 max-w-5xl leading-tight opacity-0 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-          Timeless Pieces for the Modern Home
+          Tidlösa Möbler för det Moderna Hemmet
         </h1>
         
         <p className="max-w-xl text-base md:text-lg text-white/90 mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
-          Curated vintage furniture and décor that tells stories of the past while creating new memories in your space.
+          Noggrant utvalda vintagemöbler och inredningsdetaljer som berättar historier från det förflutna samtidigt som de skapar nya minnen i ditt hem.
         </p>
         
         <a 
@@ -51,14 +51,14 @@ const HeroSection = () => {
           className="px-8 py-3 bg-vintage-cream text-vintage-brown font-medium rounded-full shadow-lg hover:bg-vintage-cream/90 transition-all transform hover:translate-y-[-2px] focus:ring-2 focus:ring-vintage-terracotta focus:ring-offset-2 opacity-0 animate-fade-in"
           style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}
         >
-          Discover Our Story
+          Upptäck Vår Historia
         </a>
       </div>
       
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: '1.2s', animationFillMode: 'forwards' }}>
         <div className="w-[1px] h-16 bg-white/30 mb-2"></div>
-        <span className="text-white/70 text-sm">Scroll</span>
+        <span className="text-white/70 text-sm">Scrolla</span>
       </div>
     </div>
   );

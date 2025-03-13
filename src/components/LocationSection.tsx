@@ -42,18 +42,18 @@ const LocationSection = () => {
           <div>
             <div className="space-y-6">
               <span className="inline-block px-3 py-1 text-xs font-sans tracking-widest uppercase bg-vintage-terracotta/10 text-vintage-terracotta rounded-full">
-                Find Us
+                Hitta Hit
               </span>
               
               <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight">
-                Visit Our Showroom
+                Besök Vår Butik
               </h2>
               
               <div className="w-16 h-[2px] bg-vintage-green"></div>
               
               <p className="text-muted-foreground">
-                Our carefully curated showroom is located in the heart of the city's historic district, 
-                where you can explore our collection in a beautifully restored 19th-century building.
+                Vår noggrant kurerade butik ligger i hjärtat av stadens historiska kvarter, 
+                där du kan utforska vår kollektion i en vackert restaurerad byggnad från 1800-talet.
               </p>
               
               <div className="mt-8 space-y-6">
@@ -62,11 +62,11 @@ const LocationSection = () => {
                     <MapPin className="w-5 h-5 text-vintage-brown" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-2">Address</h3>
+                    <h3 className="text-lg font-medium mb-2">Adress</h3>
                     <p className="text-muted-foreground">
-                      123 Heritage Lane<br />
-                      Antiquity District<br />
-                      New York, NY 10001
+                      Storgatan 123<br />
+                      Gamla Stan<br />
+                      Stockholm, 11129
                     </p>
                   </div>
                 </div>
@@ -76,9 +76,9 @@ const LocationSection = () => {
                     <Phone className="w-5 h-5 text-vintage-brown" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-2">Phone</h3>
+                    <h3 className="text-lg font-medium mb-2">Telefon</h3>
                     <p className="text-muted-foreground">
-                      (212) 555-1234
+                      08-123 45 67
                     </p>
                   </div>
                 </div>
@@ -88,9 +88,9 @@ const LocationSection = () => {
                     <Mail className="w-5 h-5 text-vintage-brown" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-2">Email</h3>
+                    <h3 className="text-lg font-medium mb-2">E-post</h3>
                     <p className="text-muted-foreground">
-                      hello@vintagehaven.com
+                      hej@vintagehaven.com
                     </p>
                   </div>
                 </div>
@@ -101,14 +101,14 @@ const LocationSection = () => {
           <div>
             <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-lg image-container">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8827246595906!2d-73.9907510000000!3d40.749452000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b30eac9f%3A0xaca8b8d4c40cee5f!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1699629573426!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.8035882855097!2d18.068340800000003!3d59.3254616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5c3f0fe823%3A0x92befa196a759e0!2sGamla%20Stan%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1699629573426!5m2!1ssv!2sse" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
                 allowFullScreen 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Vintage Haven Location Map"
+                title="Vintage Haven Plats Karta"
                 className="w-full h-full object-cover"
               ></iframe>
             </div>
