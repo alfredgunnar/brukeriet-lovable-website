@@ -1,74 +1,81 @@
-
-import { useEffect, useRef } from 'react';
-import { 
-  Carousel, 
-  CarouselContent, 
-  CarouselItem, 
-  CarouselNext, 
-  CarouselPrevious 
-} from '@/components/ui/carousel';
+import { useEffect, useState, useRef } from 'react';
 import { Instagram } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
-// Sample Instagram images - these would ideally come from an Instagram API
-const instagramPosts = [
-  {
-    id: 1,
-    imageUrl: "/lovable-uploads/Brukeriet-26.jpg",
-    caption: "Vintage och återbruk hos oss idag",
-    likes: 42,
-    url: "https://www.instagram.com/brukeriet"
-  },
-  {
-    id: 2,
-    imageUrl: "/lovable-uploads/Brukeriet-27.jpg",
-    caption: "Ny leverans av svenska designlampor",
-    likes: 38,
-    url: "https://www.instagram.com/brukeriet"
-  },
-  {
-    id: 3,
-    imageUrl: "/lovable-uploads/Brukeriet-29.jpg",
-    caption: "Veckans favoriter i butiken",
-    likes: 56,
-    url: "https://www.instagram.com/brukeriet"
-  },
-  {
-    id: 4,
-    imageUrl: "/lovable-uploads/Brukeriet-14.jpg",
-    caption: "Vårens nyheter har anlänt",
-    likes: 49,
-    url: "https://www.instagram.com/brukeriet"
-  },
-  {
-    id: 5,
-    imageUrl: "/lovable-uploads/Brukeriet-15.jpg",
-    caption: "Tidlös design möter modern inredning",
-    likes: 62,
-    url: "https://www.instagram.com/brukeriet"
-  }
-];
+interface InstagramPost {
+  id: string;
+  imageUrl: string;
+  caption: string;
+  likes: number;
+  url: string;
+}
 
 const InstagramCarousel = () => {
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
   
+// Sample Instagram images - these would ideally come from an Instagram API
+const instagramPosts = [
+    {
+      id: 1,
+      imageUrl: "/lovable-uploads/Brukeriet-26.jpg",
+      caption: "Vintage och återbruk hos oss idag",
+      likes: 42,
+      url: "https://www.instagram.com/brukeriet"
+    },
+    {
+      id: 2,
+      imageUrl: "/lovable-uploads/Brukeriet-27.jpg",
+      caption: "Ny leverans av svenska designlampor",
+      likes: 38,
+      url: "https://www.instagram.com/brukeriet"
+    },
+    {
+      id: 3,
+      imageUrl: "/lovable-uploads/Brukeriet-29.jpg",
+      caption: "Veckans favoriter i butiken",
+      likes: 56,
+      url: "https://www.instagram.com/brukeriet"
+    },
+    {
+      id: 4,
+      imageUrl: "/lovable-uploads/Brukeriet-14.jpg",
+      caption: "Vårens nyheter har anlänt",
+      likes: 49,
+      url: "https://www.instagram.com/brukeriet"
+    },
+    {
+      id: 5,
+      imageUrl: "/lovable-uploads/Brukeriet-15.jpg",
+      caption: "Tidlös design möter modern inredning",
+      likes: 62,
+      url: "https://www.instagram.com/brukeriet"
+    }
+  ];
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          sectionRef.current?.classList.add('in-view');
+          setIsVisible(true);
+          observer.unobserve(entry.target);
         }
       },
       {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.2,
+        threshold: 0.1,
       }
     );
-    
+
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-    
+
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
@@ -77,86 +84,75 @@ const InstagramCarousel = () => {
   }, []);
 
   return (
-    <section 
-      id="instagram" 
-      ref={sectionRef}
-      className="section py-16 px-6 bg-white"
-      style={{ '--section-index': '1.5' } as React.CSSProperties}
-    >
-      <div className="max-w-7xl mx-auto">
+    <section ref={sectionRef} className="py-16 md:py-20 bg-royal bg-opacity-5 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/61c81ec4-6269-4076-9d95-577ff45a1f98.png')] bg-cover bg-center opacity-5"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-medium mt-4 mb-4 leading-tight text-custom-terra">
-            Det senaste från butiken
+          <h2 
+            className={`section-title mx-auto transition-all duration-700 delay-100 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
+            @brukeriet på Instagram
           </h2>
           
-          <div className="w-12 h-[2px] bg-custom-gold mx-auto mb-4"></div>
-          
-          <p className="max-w-xl mx-auto text-custom-brown text-base mb-4">
-            Det som är nytt i butiken läggs upp flera gånger i veckan som inlägg och stories på Instagram.
-          </p>
-          
-          <p className="max-w-xl mx-auto text-custom-brown text-base">
-            Följ oss på <a 
-              href="https://www.instagram.com/brukeriet" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-custom-gold hover:text-custom-terra transition-colors font-medium"
-            >
-              @brukeriet
-            </a> för daglig inspiration och nyheter
+          <p 
+            className={`text-coffee max-w-2xl mx-auto mb-8 transition-all duration-700 delay-200 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
+            Följ oss på Instagram för att se våra senaste fynd och nyheter.
           </p>
         </div>
-
-        <div className="mt-8">
-          <Carousel
+        
+        <div 
+          className={`max-w-5xl mx-auto transition-all duration-700 delay-300 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
+          <Carousel 
             opts={{
-              align: "center",
+              align: "start",
               loop: true,
             }}
             className="w-full"
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-2 md:-ml-4">
               {instagramPosts.map((post) => (
-                <CarouselItem key={post.id} className="md:basis-1/2 lg:basis-1/3 pl-4">
-                  <a 
-                    href={post.url}
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="block group"
-                  >
-                    <div className="overflow-hidden rounded-lg shadow-md bg-white">
-                      <div className="relative aspect-square">
-                        <img
-                          src={post.imageUrl}
-                          alt={post.caption}
-                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4">
-                          <span className="text-white text-sm truncate">{post.caption}</span>
-                        </div>
-                      </div>
-                      <div className="p-3 flex items-center justify-between">
-                        <div className="flex items-center gap-1">
-                          <Instagram className="h-4 w-4 text-custom-terra" />
-                          <span className="text-xs text-custom-brown">@brukeriet</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-custom-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                          </svg>
-                          <span className="text-xs text-custom-brown">{post.likes}</span>
-                        </div>
+                <CarouselItem key={post.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="vintage-image aspect-square relative group overflow-hidden rounded-lg">
+                    <img 
+                      src={post.imageUrl} 
+                      alt={post.caption} 
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-royal bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                      <div className="text-cream p-4 text-center">
+                        <Instagram className="mx-auto mb-2" size={24} />
+                        <p className="font-medium text-sm">{post.caption}</p>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="flex justify-center mt-6">
-              <CarouselPrevious className="relative static left-0 right-0 translate-y-0 mr-4" />
-              <CarouselNext className="relative static left-0 right-0 translate-y-0" />
-            </div>
+            <CarouselPrevious className="hidden md:flex -left-5 border-royal text-royal hover:bg-royal hover:text-cream" />
+            <CarouselNext className="hidden md:flex -right-5 border-royal text-royal hover:bg-royal hover:text-cream" />
           </Carousel>
+          
+          <div className="mt-8 text-center">
+            <a 
+              href="https://instagram.com/brukeriet" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center bg-royal text-cream px-6 py-3 rounded-md hover:bg-opacity-90 transition-colors"
+            >
+              <Instagram size={20} className="mr-2" />
+              Följ oss på Instagram
+            </a>
+          </div>
         </div>
       </div>
     </section>
