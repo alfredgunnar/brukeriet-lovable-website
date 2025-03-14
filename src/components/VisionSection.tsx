@@ -47,7 +47,7 @@ const VisionSection = () => {
               <div className="w-16 h-[2px] bg-custom-gold"></div>
               
               <p className="text-custom-brown">
-                Hej! Vi som driver Brukeriet heter Tina och Johanna. Till vår historiska spinneribyggnad från 1907 har vi samlat det vi själva älskar - tidlösa vintagemöbler och spännande nyproducerad svensk design med hållbarhet i fokus.
+                Hej! Vi som driver Brukeriet heter Olivia och Alfred. På fantastiska Spinneriet i Lindome från 1907 har vi samlat det vi själva älskar - tidlösa vintagemöbler och spännande nyproducerad svensk design med hållbarhet i fokus.
               </p>
               
               <p className="text-custom-brown">
