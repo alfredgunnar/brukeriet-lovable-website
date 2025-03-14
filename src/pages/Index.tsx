@@ -22,7 +22,6 @@ const Index = () => {
       <main>
         <HeroSection />
         <VisionSection />
-        <GallerySection />
         <InstagramCarousel />
         <OpeningHours />
         <LocationSection />
