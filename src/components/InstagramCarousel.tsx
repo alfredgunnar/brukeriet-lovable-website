@@ -78,7 +78,7 @@ const InstagramCarousel = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div 
-          className={`max-w-5xl mx-auto transition-all duration-700 delay-300 ${
+          className={`max-w-6xl mx-auto transition-all duration-700 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
@@ -89,10 +89,10 @@ const InstagramCarousel = () => {
             }}
             className="w-full"
           >
-            <CarouselContent className="-ml-2 md:-ml-4">
+            <CarouselContent className="-ml-4 md:-ml-6">
               {instagramPosts.map((post) => (
-                <CarouselItem key={post.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="aspect-square relative overflow-hidden rounded-lg">
+                <CarouselItem key={post.id} className="pl-4 md:pl-6 md:basis-1/2 lg:basis-1/3">
+                  <div className="aspect-square relative overflow-hidden rounded-lg shadow-lg">
                     <img 
                       src={post.imageUrl} 
                       alt="Butiken" 
@@ -107,7 +107,7 @@ const InstagramCarousel = () => {
             <CarouselNext className="hidden md:flex -right-5 border-royal text-royal hover:bg-royal hover:text-cream" />
           </Carousel>
           
-          <div className="mt-8 text-center">
+          <div className="mt-10 text-center">
             <a 
               href="https://instagram.com/brukeriet" 
               target="_blank" 
