@@ -7,6 +7,7 @@ import InstagramCarousel from '@/components/InstagramCarousel';
 import OpeningHours from '@/components/OpeningHours';
 import LocationSection from '@/components/LocationSection';
 import FullWidthImageSection from '@/components/FullWidthImageSection';
+import GallerySection from '@/components/GallerySection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <VisionSection />
+        <GallerySection />
         <InstagramCarousel />
         <OpeningHours />
         <LocationSection />

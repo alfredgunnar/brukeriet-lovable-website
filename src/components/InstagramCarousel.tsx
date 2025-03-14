@@ -10,19 +10,19 @@ import {
 } from "@/components/ui/carousel";
 
 interface InstagramPost {
-  id: string;
+  id: string | number;
   imageUrl: string;
   caption: string;
-  likes: number;
-  url: string;
+  likes?: number;
+  url?: string;
 }
 
 const InstagramCarousel = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   
-// Sample Instagram images - these would ideally come from an Instagram API
-const instagramPosts = [
+  // Sample manual uploads - replace these with your own uploaded images
+  const instagramPosts: InstagramPost[] = [
     {
       id: 1,
       imageUrl: "/lovable-uploads/Brukeriet-26.jpg",
@@ -103,9 +103,9 @@ const instagramPosts = [
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            Vi uppdaterar regelbundet flera gånger i veckan med bilder på nyheter 
-            och aktuella föremål i butiken. Följ oss på Instagram för att hålla 
-            dig uppdaterad om vad som finns tillgängligt just nu.
+            Vi uppdaterar regelbundet med bilder på nyheter 
+            och aktuella föremål i butiken. Bilder kan laddas upp manuellt för att 
+            visa de senaste produkterna och händelserna i vår butik.
           </p>
         </div>
         
