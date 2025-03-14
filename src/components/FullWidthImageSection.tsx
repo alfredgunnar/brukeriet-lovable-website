@@ -37,9 +37,10 @@ const FullWidthImageSection = () => {
     >
       <div className="absolute inset-0 w-full h-full">
         <img 
-          src="/lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png" 
+          src="/lovable-uploads/Brukeriet-29.jpg" 
           alt="Eleganta vintagemöbler i stilleben" 
           className="w-full h-full object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-custom-brown/60 to-transparent"></div>
       </div>
