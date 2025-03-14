@@ -46,11 +46,7 @@ const OpeningHours = () => {
       style={{ '--section-index': '1' } as React.CSSProperties}
     >
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-10">
-          <span className="inline-block px-3 py-1 text-xs tracking-widest uppercase bg-custom-gold/20 text-custom-cream rounded-full">
-            Besök Oss
-          </span>
-          
+        <div className="text-center mb-10">          
           <h2 className="text-3xl md:text-4xl font-medium mt-4 mb-4 leading-tight text-custom-cream">
             Öppettider
           </h2>

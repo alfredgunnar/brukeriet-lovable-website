@@ -39,11 +39,7 @@ const VisionSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div className="order-2 lg:order-1">
-            <div className="space-y-6">
-              <span className="inline-block px-3 py-1 text-xs tracking-widest uppercase bg-custom-gold/10 text-custom-gold rounded-full">
-                Vår Vision
-              </span>
-              
+            <div className="space-y-6">              
               <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-terra">
                 Vi bevarar det förflutnas skönhet för dagens livsmiljöer
               </h2>

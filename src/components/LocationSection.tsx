@@ -40,11 +40,7 @@ const LocationSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div>
-            <div className="space-y-6">
-              <span className="inline-block px-3 py-1 text-xs tracking-widest uppercase bg-custom-terra/10 text-custom-terra rounded-full">
-                Hitta Hit
-              </span>
-              
+            <div className="space-y-6">              
               <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-brown">
                 Besök Vår Butik
               </h2>
