@@ -86,7 +86,7 @@ const VisionSection = () => {
               </div>
               <div className="relative h-[200px] md:h-[250px] w-full image-container rounded-lg overflow-hidden shadow-lg md:col-span-2">
                 <img 
-                  src="/lovable-uploads/AEFAE33A-4FEA-46F1-AD7C-0806E4527ED2.JPG" 
+                  src="/lovable-uploads/4BA41F26-4E66-47EF-9135-6D3EA49F9376.JPG" 
                   alt="Eleganta vintage designföremål" 
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   loading="lazy"
