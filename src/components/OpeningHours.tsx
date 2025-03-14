@@ -31,9 +31,8 @@ const OpeningHours = () => {
     };
   }, []);
 
-  // Group similar days together
+  // Only show open days
   const hourGroups = [
-    { days: 'Måndag - Onsdag', hours: 'Stängt' },
     { days: 'Torsdag - Lördag', hours: '11:00 - 16:00' },
     { days: 'Söndag', hours: '11:00 - 15:00' },
   ];
