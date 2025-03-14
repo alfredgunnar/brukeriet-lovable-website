@@ -22,8 +22,8 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 ease-in-out px-4 lg:px-8",
         scrolled 
-          ? "py-3 bg-custom-cream/90 backdrop-blur-md shadow-sm" 
-          : "py-6 bg-transparent"
+          ? "py-3 bg-custom-cream/90 backdrop-blur-md shadow-sm opacity-100" 
+          : "py-6 bg-transparent opacity-0 pointer-events-none"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
