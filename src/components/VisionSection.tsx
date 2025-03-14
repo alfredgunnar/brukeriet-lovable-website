@@ -41,25 +41,25 @@ const VisionSection = () => {
           <div className="order-2 lg:order-1">
             <div className="space-y-6">              
               <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-terra">
-                Vi bevarar det förflutnas skönhet för dagens livsmiljöer
+                Vår vision är ett hem där dåtid och framtid möts
               </h2>
               
               <div className="w-16 h-[2px] bg-custom-gold"></div>
               
               <p className="text-custom-brown">
-                På Brukeriet tror vi att de vackraste interiörerna berättar en historia. Varje möbel i vår 
-                kollektion har handplockats för sin karaktär, hantverk och den unika energin den tillför ett rum.
+                Hej! Vi som driver Brukeriet heter Tina och Johanna. Till vår historiska spinneribyggnad från 1907 har vi samlat det vi själva älskar - tidlösa vintagemöbler och spännande nyproducerad svensk design med hållbarhet i fokus.
               </p>
               
               <p className="text-custom-brown">
-                Vår mission är att rädda exceptionella vintagemöbler och inredning från förr, återställa dem 
-                till sin ursprungliga glans och samtidigt ge dem nytt liv i moderna hem. Vi uppskattar 
-                patinan som kommer med ålder – de små imperfektionerna som avslöjar ett föremåls resa genom tiden.
+                När det gäller vintage handplockar vi varje unik pjäs för dess karaktär, kvalitet och den speciella känsla den förmedlar. Vi uppskattar patinan som kommer med ålder – de små imperfektionerna som avslöjar ett föremåls resa genom tiden.
+              </p>
+              
+              <p className="text-custom-brown">
+                Samtidigt samarbetar vi med kreativa svenska formgivare som skapar allt från 3D-printade lampor av återvunnet material till linnetextilier tillverkade här i Sverige och ljushållare gjorda av spillmaterial från stålindustrin. Allt har en tanke och en historia.
               </p>
               
               <p className="text-custom-terra font-medium">
-                Vi bjuder in dig att upptäcka möbler som resonerar med din personliga stil och som blir 
-                värdefulla inslag i ditt hem för generationer framöver.
+                Vi vill att du ska hitta både de perfekta vintagepjäserna och de moderna, hållbara detaljerna som tillsammans skapar ett personligt hem. Välkommen in och låt dig inspireras!
               </p>
             </div>
           </div>

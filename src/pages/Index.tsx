@@ -6,6 +6,7 @@ import VisionSection from '@/components/VisionSection';
 import OpeningHours from '@/components/OpeningHours';
 import LocationSection from '@/components/LocationSection';
 import FullWidthImageSection from '@/components/FullWidthImageSection';
+import GallerySection from '@/components/GallerySection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
         <VisionSection />
         <OpeningHours />
         <LocationSection />
+        <GallerySection />
         <FullWidthImageSection />
       </main>
       <Footer />

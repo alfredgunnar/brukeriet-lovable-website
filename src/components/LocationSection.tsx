@@ -48,8 +48,7 @@ const LocationSection = () => {
               <div className="w-16 h-[2px] bg-custom-gold"></div>
               
               <p className="text-custom-brown">
-                Vår noggrant kurerade butik ligger i hjärtat av stadens historiska kvarter, 
-                där du kan utforska vår kollektion i en vackert restaurerad byggnad från 1800-talet.
+                Välkommen till vår butik i den historiska spinneribyggnaden från 1907! Här har garn och textilier producerats i över hundra år, och nu har vi skapat ett inspirerande hem för både vintageskatter och modern hållbar design.
               </p>
               
               <div className="mt-8 space-y-8">
@@ -85,12 +84,9 @@ const LocationSection = () => {
                   <div>
                     <h3 className="text-lg font-medium mb-2 text-custom-terra">Kollektivtrafik</h3>
                     <p className="text-custom-brown">
-                      Vill du åka kollektivt från Göteborg eller Kungsbacka så ta pendeltåget till Lindome station.
+                      Pendeltåg från Göteborg eller Kungsbacka till Lindome station. Därifrån tar du buss 761 mot Mölndal och går av vid Annestorpsvägen.
                       <br /><br />
-                      Åk därifrån buss 761 mot Mölndal och gå av vid Annestorpsvägen.
-                      <br /><br />
-                      Fortsätt sedan till fots ett par minuter på samma väg du gått av, men bakåt i bussens färdriktning. 
-                      Du kommer ha ett grönt radhusområde på din högra sida. Precis efter radhusen svänger du vänster upp på Spinnmästarevägen. Framme!
+                      När du klivit av bussen, fortsätt ett par minuter på samma väg men bakåt i bussens färdriktning. Du har ett grönt radhusområde på höger sida. Sväng sedan vänster upp på Spinnmästarevägen - och du är framme!
                     </p>
                   </div>
                 </div>
@@ -102,7 +98,7 @@ const LocationSection = () => {
                   <div>
                     <h3 className="text-lg font-medium mb-2 text-custom-terra">Parkering</h3>
                     <p className="text-custom-brown">
-                      Vi har 200 kostnadsfria parkeringsplatser tillgängliga för våra besökare.
+                      Det finns gott om kostnadsfria parkeringsplatser precis utanför vår lokal, så det är enkelt att besöka oss med bil.
                     </p>
                   </div>
                 </div>

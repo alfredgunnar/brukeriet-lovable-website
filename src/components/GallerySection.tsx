@@ -12,15 +12,15 @@ import { AspectRatio } from '@/components/ui/aspect-ratio';
 const images = [
   {
     src: "/lovable-uploads/fd89ec7c-7967-42ef-a8d1-b9a93e43ac36.png",
-    alt: "Vintage interior with furniture and decorative items"
+    alt: "Vintagemöbler och hållbara inredningsdetaljer"
   },
   {
     src: "/lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png",
-    alt: "Elegant vintage furniture display"
+    alt: "Svensktillverkade linnetextilier och vintage"
   },
   {
     src: "/lovable-uploads/e8bbdeb1-097c-4101-846d-828f9bdafaa3.png",
-    alt: "Antique furniture piece in a stylish setting"
+    alt: "3D-printade lampor tillverkade av återvunnet material"
   }
 ];
 
@@ -68,8 +68,8 @@ const GallerySection = () => {
           <div className="w-16 h-[2px] bg-custom-gold mx-auto my-4"></div>
           
           <p className="max-w-2xl mx-auto text-custom-brown">
-            Utforska vårt noggrant utvalda sortiment av vintage möbler och inredningsdetaljer 
-            som ger karaktär och historia till ditt hem.
+            Utforska vårt utbud av handplockade vintagemöbler och hållbara, svenskproducerade inredningsdetaljer. 
+            Allt från 3D-printade lampor av återvunnet material till linnevaror och ståldetaljer av spillmaterial.
           </p>
         </div>
 

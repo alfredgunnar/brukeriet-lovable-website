@@ -35,11 +35,11 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative h-full flex flex-col items-center justify-center px-6 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium mb-4 max-w-5xl leading-tight text-custom-cream drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)] opacity-0 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
-          Tidlösa Möbler för det Moderna Hemmet
+          Vintage Möts Hållbar Nutid
         </h1>
         
         <p className="max-w-xl text-base md:text-lg text-white mb-8 drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] opacity-0 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-          Noggrant utvalda vintagemöbler och inredningsdetaljer som berättar historier från det förflutna samtidigt som de skapar nya minnen i ditt hem.
+          Vi handplockar både unika vintagepjäser och nya, svenskdesignade hållbara inredningsdetaljer. Allt hos oss har en historia - vissa från förr, andra bara i början på sin resa.
         </p>
         
         <a 
@@ -47,7 +47,7 @@ const HeroSection = () => {
           className="px-8 py-3 bg-custom-gold/90 text-white font-medium uppercase tracking-wider rounded-md shadow-lg hover:bg-custom-gold transition-all transform hover:translate-y-[-2px] focus:ring-2 focus:ring-custom-terra focus:ring-offset-2 opacity-0 animate-fade-in"
           style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}
         >
-          Upptäck Vår Historia
+          Lär Känna Oss
         </a>
       </div>
     </div>
