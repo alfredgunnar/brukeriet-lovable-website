@@ -1,5 +1,5 @@
 
-import { Clock } from 'lucide-react';
+import { Clock, Instagram } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -80,9 +80,17 @@ const OpeningHours = () => {
             
             <div className="mt-6 pt-4 border-t border-custom-terra/10 text-center">
               <p className="text-xs text-custom-brown">
-                Specialbokningar finns tillgängliga för inredningsarkitekter och kommersiella projekt.
-                <span className="block mt-1 text-custom-terra">bokning@brukeriet.com</span>
+                Öppettider kan ändras under helgdagar. Följ oss på Instagram för senaste information.
               </p>
+              <a 
+                href="https://www.instagram.com/brukeriet" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center mt-2 text-custom-terra hover:text-custom-gold transition-colors"
+              >
+                <Instagram className="h-4 w-4 mr-1" />
+                <span className="text-xs">@brukeriet</span>
+              </a>
             </div>
           </CardContent>
         </Card>
