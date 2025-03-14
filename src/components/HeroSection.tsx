@@ -30,8 +30,8 @@ const HeroSection = () => {
         }}
       />
       
-      {/* Enhanced overlay with cobalt blue accent */}
-      <div className="absolute inset-0 bg-gradient-to-b from-custom-brown/60 via-[#0047AB]/30 to-custom-terra/70" />
+      {/* Overlay gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-custom-brown/60 via-transparent to-custom-terra/70" />
       
       {/* Content */}
       <div className="relative h-full flex flex-col items-center justify-center px-6 text-center">
@@ -45,7 +45,7 @@ const HeroSection = () => {
         
         <Button 
           asChild
-          className="bg-[#0047AB] hover:bg-[#0047AB]/90 text-white font-medium uppercase tracking-wider shadow-lg transition-all transform hover:translate-y-[-2px] opacity-0 animate-fade-in"
+          className="bg-custom-terra hover:bg-custom-terra/90 text-white font-medium uppercase tracking-wider shadow-lg transition-all transform hover:translate-y-[-2px] opacity-0 animate-fade-in"
           style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}
         >
           <a href="#vision">Upptäck Vår Historia</a>
