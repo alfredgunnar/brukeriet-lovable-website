@@ -2,6 +2,7 @@
 import { MapPin, Mail, Bus, Car } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { Button } from './ui/button';
+import { Card } from './ui/card';
 
 const LocationSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -39,6 +40,14 @@ const LocationSection = () => {
       style={{ '--section-index': '2' } as React.CSSProperties}
     >
       <div className="max-w-7xl mx-auto">
+        <div className="mb-12">
+          <img 
+            src="/lovable-uploads/Brukeriet-2.jpg" 
+            alt="Brukeriet butik" 
+            className="w-full h-[300px] md:h-[400px] object-cover rounded-lg shadow-lg"
+          />
+        </div>
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           <div>
             <div className="space-y-6">              
