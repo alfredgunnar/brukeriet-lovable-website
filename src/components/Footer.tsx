@@ -1,107 +1,65 @@
 
-import { Instagram, Facebook, Twitter } from 'lucide-react';
+import { Instagram, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-custom-terra text-custom-cream py-16 px-6">
+    <footer className="bg-[#0047AB] text-white py-12 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div className="lg:col-span-2">
-            <div className="flex items-center mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+          <div className="flex flex-col items-center md:items-start">
+            <div className="mb-6">
               <img 
-                src="/lovable-uploads/e8bbdeb1-097c-4101-846d-828f9bdafaa3.png" 
+                src="/lovable-uploads/71041a7c-3bba-476c-9224-d65de5e0078c.png" 
                 alt="Brukeriet" 
-                className="h-10 object-contain"
+                className="h-28 object-contain"
               />
             </div>
-            <p className="text-custom-cream/80 max-w-md">
-              Handplockade vintagemöbler och inredning för kräsna husägare, inredningsarkitekter 
-              och stilentusiaster som uppskattar det förflutnas tidlösa skönhet.
-            </p>
-            
-            <div className="flex space-x-4 mt-6">
+            <div className="flex space-x-4 mt-2">
               <a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-custom-gold flex items-center justify-center hover:bg-custom-gold/80 transition-colors"
+                href="https://instagram.com/brukeriet" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-white/90 hover:text-white transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-custom-gold flex items-center justify-center hover:bg-custom-gold/80 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-full bg-custom-gold flex items-center justify-center hover:bg-custom-gold/80 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
+                <span>@brukeriet</span>
               </a>
             </div>
           </div>
           
-          <div>
-            <h4 className="font-medium text-lg mb-4 uppercase tracking-wider">Snabblänkar</h4>
-            <ul className="space-y-2">
-              {[
-                { name: 'Vår Vision', href: '#vision' },
-                { name: 'Öppettider', href: '#hours' },
-                { name: 'Hitta Hit', href: '#location' },
-                { name: 'Kontakta Oss', href: '#' },
-              ].map((item) => (
-                <li key={item.name}>
-                  <a 
-                    href={item.href} 
-                    className="text-custom-cream/70 hover:text-custom-cream transition-colors"
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <div className="flex justify-center">
+            <img 
+              src="/lovable-uploads/a5bf94d6-3187-43a1-acf3-79bbf4e92bda.png" 
+              alt="Brukeriet Badge" 
+              className="h-36 object-contain" 
+            />
           </div>
           
-          <div>
-            <h4 className="font-medium text-lg mb-4 uppercase tracking-wider">Nyhetsbrev</h4>
-            <p className="text-custom-cream/80 mb-4">
-              Prenumerera för att få uppdateringar om nya varor och specialevenemang.
-            </p>
-            
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-3">
-              <input 
-                type="email" 
-                placeholder="Din e-postadress" 
-                className="w-full px-4 py-2 bg-custom-cream/10 border border-custom-cream/20 rounded-md placeholder:text-custom-cream/50 focus:outline-none focus:ring-2 focus:ring-custom-gold text-custom-cream"
+          <div className="flex flex-col items-center md:items-end text-right">
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/37c763b4-9e18-4eb6-bfc8-7b28995b4425.png" 
+                alt="Brukeriet Logo" 
+                className="h-28 object-contain" 
               />
-              <button 
-                type="submit"
-                className="w-full py-2 bg-custom-gold text-custom-cream font-medium rounded-md hover:bg-custom-gold/90 transition-colors uppercase tracking-wider"
-              >
-                Prenumerera
-              </button>
-            </form>
+            </div>
+            <a 
+              href="mailto:info@brukeriet.se" 
+              className="flex items-center space-x-2 text-white/90 hover:text-white transition-colors"
+            >
+              <Mail className="w-5 h-5" />
+              <span>info@brukeriet.se</span>
+            </a>
           </div>
         </div>
         
-        <div className="mt-16 pt-8 border-t border-custom-cream/20 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-custom-cream/60 text-sm">
-            &copy; {currentYear} Brukeriet. Alla rättigheter förbehållna.
+        <div className="mt-12 pt-6 border-t border-white/10 flex justify-center">
+          <p className="text-white/70 text-sm">
+            &copy; {currentYear} Brukeriet
           </p>
-          
-          <div className="mt-4 md:mt-0 flex space-x-6">
-            <a href="#" className="text-custom-cream/60 text-sm hover:text-custom-cream transition-colors">
-              Integritetspolicy
-            </a>
-            <a href="#" className="text-custom-cream/60 text-sm hover:text-custom-cream transition-colors">
-              Användarvillkor
-            </a>
-          </div>
         </div>
       </div>
     </footer>
