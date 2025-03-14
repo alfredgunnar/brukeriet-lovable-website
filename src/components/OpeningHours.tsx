@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const OpeningHours = () => {
   const sectionRef = useRef<HTMLElement>(null);
-  
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -19,11 +19,11 @@ const OpeningHours = () => {
         threshold: 0.2,
       }
     );
-    
+
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-    
+
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
@@ -38,32 +38,32 @@ const OpeningHours = () => {
   ];
 
   return (
-    <section 
-      id="hours" 
+    <section
+      id="hours"
       ref={sectionRef}
       className="section py-16 px-6 bg-custom-brown relative"
       style={{ '--section-index': '1' } as React.CSSProperties}
     >
       {/* Background image with overlay */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <img 
-          src="/lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png" 
-          alt="Background" 
+        <img
+          src="/lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png"
+          alt="Background"
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-custom-brown/80"></div>
       </div>
-      
+
       {/* Content with relative positioning to appear above the background */}
       <div className="max-w-5xl mx-auto relative z-10">
-        <div className="text-center mb-10">          
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-medium mt-4 mb-4 leading-tight text-custom-cream">
             Öppettider
           </h2>
-          
+
           <div className="w-12 h-[2px] bg-custom-gold mx-auto"></div>
         </div>
-        
+
         <Card className="max-w-md mx-auto bg-custom-cream/95 backdrop-blur-sm shadow-sm">
           <CardContent className="pt-6">
             <div className="flex items-center justify-center mb-6">
@@ -71,10 +71,10 @@ const OpeningHours = () => {
                 <Clock className="w-6 h-6 text-custom-gold" />
               </div>
             </div>
-            
+
             <div className="space-y-3">
               {hourGroups.map((group) => (
-                <div 
+                <div
                   key={group.days}
                   className="flex justify-between items-center py-2 border-b border-custom-terra/10 last:border-b-0"
                 >
@@ -83,14 +83,17 @@ const OpeningHours = () => {
                 </div>
               ))}
             </div>
-            
+
             <div className="mt-6 pt-4 border-t border-custom-terra/10 text-center">
               <p className="text-xs text-custom-brown">
-                Öppettider kan ändras under helgdagar. Följ oss på Instagram för senaste information.
+                Öppettider kan justeras vid högtider.
               </p>
-              <a 
-                href="https://www.instagram.com/brukeriet" 
-                target="_blank" 
+              <p className="text-xs text-custom-brown">
+                Följ oss på Instagram för aktuell information.
+              </p>
+              <a
+                href="https://www.instagram.com/brukeriet"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center mt-2 text-custom-terra hover:text-custom-gold transition-colors"
               >

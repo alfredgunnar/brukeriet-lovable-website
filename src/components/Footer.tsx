@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         
         <p className="text-white/70 text-sm">
-          &copy; {currentYear} Brukeriet
+          &copy; {currentYear} Brukeriet Gunnargård AB
         </p>
       </div>
     </footer>
