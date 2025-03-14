@@ -68,9 +68,10 @@ const VisionSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="relative h-[350px] w-full image-container rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/fd89ec7c-7967-42ef-a8d1-b9a93e43ac36.png" 
+                  src="/lovable-uploads/Brukeriet-2.jpg" 
                   alt="Vintage interiör med designmöbler och inredning" 
                   className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
               </div>
@@ -79,14 +80,16 @@ const VisionSection = () => {
                   src="/lovable-uploads/e8bbdeb1-097c-4101-846d-828f9bdafaa3.png" 
                   alt="Vintagemöbler i modern inredning" 
                   className="absolute inset-0 w-full h-full object-cover object-center"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
               </div>
               <div className="relative h-[200px] md:h-[250px] w-full image-container rounded-lg overflow-hidden shadow-lg md:col-span-2">
                 <img 
-                  src="/lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png" 
+                  src="/lovable-uploads/Brukeriet-21.jpg" 
                   alt="Eleganta vintage designföremål" 
                   className="absolute inset-0 w-full h-full object-cover object-center"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
               </div>
