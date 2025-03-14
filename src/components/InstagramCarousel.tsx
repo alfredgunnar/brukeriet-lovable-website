@@ -1,3 +1,4 @@
+
 import { useEffect, useState, useRef } from 'react';
 import { Instagram } from 'lucide-react';
 import {
@@ -84,7 +85,7 @@ const instagramPosts = [
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-20 bg-royal bg-opacity-5 relative overflow-hidden">
+    <section ref={sectionRef} className="py-16 md:py-20 bg-custom-brown bg-opacity-10 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('/lovable-uploads/61c81ec4-6269-4076-9d95-577ff45a1f98.png')] bg-cover bg-center opacity-5"></div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -94,7 +95,7 @@ const instagramPosts = [
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            @brukeriet på Instagram
+            Det senaste från butiken
           </h2>
           
           <p 
@@ -102,7 +103,9 @@ const instagramPosts = [
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            Följ oss på Instagram för att se våra senaste fynd och nyheter.
+            Vi uppdaterar regelbundet flera gånger i veckan med bilder på nyheter 
+            och aktuella föremål i butiken. Följ oss på Instagram för att hålla 
+            dig uppdaterad om vad som finns tillgängligt just nu.
           </p>
         </div>
         
@@ -121,15 +124,15 @@ const instagramPosts = [
             <CarouselContent className="-ml-2 md:-ml-4">
               {instagramPosts.map((post) => (
                 <CarouselItem key={post.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="vintage-image aspect-square relative group overflow-hidden rounded-lg">
+                  <div className="aspect-square relative group overflow-hidden rounded-lg">
                     <img 
                       src={post.imageUrl} 
                       alt={post.caption} 
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-royal bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                      <div className="text-cream p-4 text-center">
+                    <div className="absolute inset-0 bg-royal opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
+                      <div className="text-cream p-4 text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         <Instagram className="mx-auto mb-2" size={24} />
                         <p className="font-medium text-sm">{post.caption}</p>
                       </div>
