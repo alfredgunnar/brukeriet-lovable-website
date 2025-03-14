@@ -1,5 +1,5 @@
 
-import { MapPin, Mail } from 'lucide-react';
+import { MapPin, Mail, Bus, Car } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
 const LocationSection = () => {
@@ -38,7 +38,7 @@ const LocationSection = () => {
       style={{ '--section-index': '2' } as React.CSSProperties}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           <div>
             <div className="space-y-6">              
               <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-brown">
@@ -52,7 +52,7 @@ const LocationSection = () => {
                 där du kan utforska vår kollektion i en vackert restaurerad byggnad från 1800-talet.
               </p>
               
-              <div className="mt-8 space-y-6">
+              <div className="mt-8 space-y-8">
                 <div className="flex items-start">
                   <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5 text-custom-gold" />
@@ -74,6 +74,35 @@ const LocationSection = () => {
                     <h3 className="text-lg font-medium mb-2 text-custom-terra">E-post</h3>
                     <p className="text-custom-brown">
                       info@brukeriet.se
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
+                    <Bus className="w-5 h-5 text-custom-gold" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium mb-2 text-custom-terra">Kollektivtrafik</h3>
+                    <p className="text-custom-brown">
+                      Vill du åka kollektivt från Göteborg eller Kungsbacka så ta pendeltåget till Lindome station.
+                      <br /><br />
+                      Åk därifrån buss 761 mot Mölndal och gå av vid Annestorpsvägen.
+                      <br /><br />
+                      Fortsätt sedan till fots ett par minuter på samma väg du gått av, men bakåt i bussens färdriktning. 
+                      Du kommer ha ett grönt radhusområde på din högra sida. Precis efter radhusen svänger du vänster upp på Spinnmästarevägen. Framme!
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
+                    <Car className="w-5 h-5 text-custom-gold" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium mb-2 text-custom-terra">Parkering</h3>
+                    <p className="text-custom-brown">
+                      Vi har 200 kostnadsfria parkeringsplatser tillgängliga för våra besökare.
                     </p>
                   </div>
                 </div>
