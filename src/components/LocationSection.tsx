@@ -1,5 +1,5 @@
 
-import { MapPin, Mail, Bus, Car, Link } from 'lucide-react';
+import { MapPin, Mail, Bus, Car } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { Button } from './ui/button';
 
@@ -53,10 +53,9 @@ const LocationSection = () => {
                   href="https://www.spinnerietlindome.se/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-custom-gold hover:text-custom-terra transition-colors"
+                  className="text-custom-gold hover:text-custom-terra transition-colors underline"
                 >
-                  <span className="underline">Spinneriet i Lindome</span>
-                  <Link className="w-4 h-4 ml-1" />
+                  Spinneriet i Lindome
                 </a>!
               </p>
               
