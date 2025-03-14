@@ -42,10 +42,21 @@ const OpeningHours = () => {
     <section 
       id="hours" 
       ref={sectionRef}
-      className="section py-16 px-6 bg-custom-brown"
+      className="section py-16 px-6 bg-custom-brown relative"
       style={{ '--section-index': '1' } as React.CSSProperties}
     >
-      <div className="max-w-5xl mx-auto">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <img 
+          src="/lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png" 
+          alt="Background" 
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-custom-brown/80"></div>
+      </div>
+      
+      {/* Content with relative positioning to appear above the background */}
+      <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-10">          
           <h2 className="text-3xl md:text-4xl font-medium mt-4 mb-4 leading-tight text-custom-cream">
             Öppettider
