@@ -54,12 +54,6 @@ const HeroSection = () => {
           Upptäck Vår Historia
         </a>
       </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: '1.2s', animationFillMode: 'forwards' }}>
-        <div className="w-[1px] h-16 bg-custom-cream/30 mb-2"></div>
-        <span className="text-custom-cream/70 text-sm">Scrolla</span>
-      </div>
     </div>
   );
 };
