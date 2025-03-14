@@ -49,7 +49,15 @@ const LocationSection = () => {
               <div className="w-16 h-[2px] bg-custom-gold"></div>
               
               <p className="text-custom-brown">
-                Välkommen till vår inspirerande butik på Spinneriet i Lindome!
+                Välkommen till vår inspirerande butik på <a 
+                  href="https://www.spinnerietlindome.se/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-custom-gold hover:text-custom-terra transition-colors"
+                >
+                  <span className="underline">Spinneriet i Lindome</span>
+                  <Link className="w-4 h-4 ml-1" />
+                </a>!
               </p>
               
               <div className="mt-8 space-y-8">
@@ -63,17 +71,6 @@ const LocationSection = () => {
                       Spinnmästarevägen 2<br />
                       43734 Lindome
                     </p>
-                    <div className="mt-2">
-                      <a 
-                        href="https://www.spinnerietlindome.se/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-custom-gold hover:text-custom-terra transition-colors"
-                      >
-                        <Link className="w-4 h-4 mr-1" />
-                        <span className="underline">spinnerietlindome.se</span>
-                      </a>
-                    </div>
                   </div>
                 </div>
 
