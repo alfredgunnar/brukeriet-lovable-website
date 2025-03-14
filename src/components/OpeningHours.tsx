@@ -31,13 +31,13 @@ const OpeningHours = () => {
   }, []);
 
   const hours = [
-    { day: 'Måndag', hours: '10:00 - 18:00' },
-    { day: 'Tisdag', hours: '10:00 - 18:00' },
-    { day: 'Onsdag', hours: '10:00 - 18:00' },
-    { day: 'Torsdag', hours: '10:00 - 19:00' },
-    { day: 'Fredag', hours: '10:00 - 19:00' },
-    { day: 'Lördag', hours: '09:00 - 20:00' },
-    { day: 'Söndag', hours: '11:00 - 17:00' },
+    { day: 'Måndag', hours: 'Stängt' },
+    { day: 'Tisdag', hours: 'Stängt' },
+    { day: 'Onsdag', hours: 'Stängt' },
+    { day: 'Torsdag', hours: '11:00 - 16:00' },
+    { day: 'Fredag', hours: '11:00 - 16:00' },
+    { day: 'Lördag', hours: '11:00 - 16:00' },
+    { day: 'Söndag', hours: '11:00 - 15:00' },
   ];
 
   return (
