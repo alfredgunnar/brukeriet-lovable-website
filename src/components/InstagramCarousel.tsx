@@ -131,10 +131,10 @@ const instagramPosts = [
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-royal opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
-                      <div className="text-cream p-4 text-center transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <div className="text-cream p-4 text-center absolute bottom-0 left-0 right-0 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         <Instagram className="mx-auto mb-2" size={24} />
-                        <p className="font-medium text-sm">{post.caption}</p>
+                        <p className="font-medium text-sm drop-shadow-md">{post.caption}</p>
                       </div>
                     </div>
                   </div>
