@@ -1,6 +1,7 @@
 
-import { MapPin, Mail, Bus, Car } from 'lucide-react';
+import { MapPin, Mail, Bus, Car, Link } from 'lucide-react';
 import { useEffect, useRef } from 'react';
+import { Button } from './ui/button';
 
 const LocationSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -48,7 +49,7 @@ const LocationSection = () => {
               <div className="w-16 h-[2px] bg-custom-gold"></div>
               
               <p className="text-custom-brown">
-                Välkommen till vår butik i den historiska spinneribyggnaden från 1907! Här har garn och textilier producerats i över hundra år, och nu har vi skapat ett inspirerande hem för både vintageskatter och modern hållbar design.
+                Välkommen till vår inspirerande butik på Spinneriet i Lindome!
               </p>
               
               <div className="mt-8 space-y-8">
@@ -62,18 +63,17 @@ const LocationSection = () => {
                       Spinnmästarevägen 2<br />
                       43734 Lindome
                     </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5 text-custom-gold" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium mb-2 text-custom-terra">E-post</h3>
-                    <p className="text-custom-brown">
-                      info@brukeriet.se
-                    </p>
+                    <div className="mt-2">
+                      <a 
+                        href="https://www.spinnerietlindome.se/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-custom-gold hover:text-custom-terra transition-colors"
+                      >
+                        <Link className="w-4 h-4 mr-1" />
+                        <span className="underline">spinnerietlindome.se</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -99,6 +99,18 @@ const LocationSection = () => {
                     <h3 className="text-lg font-medium mb-2 text-custom-terra">Parkering</h3>
                     <p className="text-custom-brown">
                       Det finns gott om kostnadsfria parkeringsplatser precis utanför vår lokal, så det är enkelt att besöka oss med bil.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
+                    <Mail className="w-5 h-5 text-custom-gold" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-medium mb-2 text-custom-terra">E-post</h3>
+                    <p className="text-custom-brown">
+                      info@brukeriet.se
                     </p>
                   </div>
                 </div>
