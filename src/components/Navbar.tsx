@@ -32,7 +32,7 @@ const Navbar = () => {
           className="flex items-center"
         >
           <img 
-            src="/lovable-uploads/e8bbdeb1-097c-4101-846d-828f9bdafaa3.png" 
+            src="/lovable-uploads/logo.png" 
             alt="Brukeriet" 
             className="h-10 object-contain"
           />

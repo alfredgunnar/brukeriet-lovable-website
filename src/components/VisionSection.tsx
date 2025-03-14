@@ -68,7 +68,7 @@ const VisionSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="relative h-[350px] w-full image-container rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/Brukeriet-2.jpg" 
+                  src="/lovable-uploads/E7549DA8-37F2-4D42-82FD-334139C2ADF2.JPG" 
                   alt="Vintage interiör med designmöbler och inredning" 
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
@@ -77,7 +77,7 @@ const VisionSection = () => {
               </div>
               <div className="relative h-[350px] w-full image-container rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/lovable-uploads/e8bbdeb1-097c-4101-846d-828f9bdafaa3.png" 
+                  src="/lovable-uploads/BE6E6EFD-88A2-42E1-BB87-7852661F3C6E.JPG" 
                   alt="Vintagemöbler i modern inredning" 
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   loading="lazy"
@@ -86,7 +86,7 @@ const VisionSection = () => {
               </div>
               <div className="relative h-[200px] md:h-[250px] w-full image-container rounded-lg overflow-hidden shadow-lg md:col-span-2">
                 <img 
-                  src="/lovable-uploads/Brukeriet-21.jpg" 
+                  src="/lovable-uploads/AEFAE33A-4FEA-46F1-AD7C-0806E4527ED2.JPG" 
                   alt="Eleganta vintage designföremål" 
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   loading="lazy"
