@@ -1,4 +1,3 @@
-
 import { MapPin, Mail, Bus, Car } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 
@@ -45,7 +44,7 @@ const LocationSection = () => {
                 Hitta hit
               </h2>
               
-              <div className="w-16 h-[2px] bg-custom-gold"></div>
+              <div className="w-16 h-[2px] bg-[#0047AB]"></div>
               
               <p className="text-custom-brown">
                 Vår noggrant kurerade butik ligger i hjärtat av stadens historiska kvarter, 
@@ -54,8 +53,8 @@ const LocationSection = () => {
               
               <div className="mt-8 space-y-8">
                 <div className="flex items-start">
-                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-custom-gold" />
+                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-[#0047AB]/10 flex items-center justify-center shrink-0">
+                    <MapPin className="w-5 h-5 text-[#0047AB]" />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-2 text-custom-terra">Adress</h3>
@@ -67,8 +66,8 @@ const LocationSection = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5 text-custom-gold" />
+                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-[#0047AB]/10 flex items-center justify-center shrink-0">
+                    <Mail className="w-5 h-5 text-[#0047AB]" />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-2 text-custom-terra">E-post</h3>
@@ -79,8 +78,8 @@ const LocationSection = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
-                    <Bus className="w-5 h-5 text-custom-gold" />
+                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-[#0047AB]/10 flex items-center justify-center shrink-0">
+                    <Bus className="w-5 h-5 text-[#0047AB]" />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-2 text-custom-terra">Kollektivtrafik</h3>
@@ -96,8 +95,8 @@ const LocationSection = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
-                    <Car className="w-5 h-5 text-custom-gold" />
+                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-[#0047AB]/10 flex items-center justify-center shrink-0">
+                    <Car className="w-5 h-5 text-[#0047AB]" />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-2 text-custom-terra">Parkering</h3>
@@ -111,7 +110,7 @@ const LocationSection = () => {
           </div>
           
           <div>
-            <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-lg">
+            <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-lg border-2 border-[#0047AB]/20">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.553837375168!2d12.0986673!3d57.6165978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff0ea4b8b2a7b%3A0x3b20d78133d980c6!2sSpinnm%C3%A4starev%C3%A4gen%202%2C%20437%2034%20Lindome!5e0!3m2!1ssv!2sse!4v1717073883764!5m2!1ssv!2sse" 
                 className="w-full h-full border-0"

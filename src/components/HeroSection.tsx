@@ -1,5 +1,6 @@
 
 import { useEffect, useRef } from 'react';
+import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -29,8 +30,8 @@ const HeroSection = () => {
         }}
       />
       
-      {/* Enhanced overlay with stronger gradient for better text contrast */}
-      <div className="absolute inset-0 bg-gradient-to-b from-custom-brown/60 to-custom-terra/70" />
+      {/* Enhanced overlay with cobalt blue accent */}
+      <div className="absolute inset-0 bg-gradient-to-b from-custom-brown/60 via-[#0047AB]/30 to-custom-terra/70" />
       
       {/* Content */}
       <div className="relative h-full flex flex-col items-center justify-center px-6 text-center">
@@ -42,13 +43,13 @@ const HeroSection = () => {
           Noggrant utvalda vintagemöbler och inredningsdetaljer som berättar historier från det förflutna samtidigt som de skapar nya minnen i ditt hem.
         </p>
         
-        <a 
-          href="#vision" 
-          className="px-8 py-3 bg-custom-gold/90 text-white font-medium uppercase tracking-wider rounded-md shadow-lg hover:bg-custom-gold transition-all transform hover:translate-y-[-2px] focus:ring-2 focus:ring-custom-terra focus:ring-offset-2 opacity-0 animate-fade-in"
+        <Button 
+          asChild
+          className="bg-[#0047AB] hover:bg-[#0047AB]/90 text-white font-medium uppercase tracking-wider shadow-lg transition-all transform hover:translate-y-[-2px] opacity-0 animate-fade-in"
           style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}
         >
-          Upptäck Vår Historia
-        </a>
+          <a href="#vision">Upptäck Vår Historia</a>
+        </Button>
       </div>
     </div>
   );
