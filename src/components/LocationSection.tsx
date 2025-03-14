@@ -109,7 +109,7 @@ const LocationSection = () => {
           <div>
             <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-lg">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.553837375168!2d12.0986673!3d57.6165978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff0ea4b8b2a7b%3A0x3b20d78133d980c6!2sSpinnm%C3%A4starev%C3%A4gen%202%2C%20437%2034%20Lindome!5e0!3m2!1ssv!2sse!4v1717073883764!5m2!1ssv!2sse" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.553837375168!2d12.0986673!3d57.6165978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff0ea4b8b2a7b%3A0x3b20d78133d980c6!2sSpinnm%C3%A4starev%C3%A4gen%202%2C%20437%2034%20Lindome!5e0!3m2!1ssv!2sse!4v1717073883764!5m2!1ssv!2sse&maptype=satellite" 
                 className="w-full h-full border-0"
                 style={{ border: 0 }}
                 allowFullScreen={true}
