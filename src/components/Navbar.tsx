@@ -47,7 +47,7 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-medium uppercase tracking-wide text-custom-brown hover:text-custom-gold transition-colors"
+              className="text-sm font-medium uppercase tracking-wide text-custom-brown hover:text-[#0047AB] transition-colors"
             >
               {item.name}
             </a>
