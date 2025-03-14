@@ -65,13 +65,23 @@ const VisionSection = () => {
           </div>
           
           <div className="order-1 lg:order-2">
-            <div className="relative h-[500px] w-full image-container rounded-lg overflow-hidden">
-              <img 
-                src="/lovable-uploads/fd89ec7c-7967-42ef-a8d1-b9a93e43ac36.png" 
-                alt="Vintage interiör med designmöbler och inredning" 
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
+            <div className="grid grid-cols-1 gap-6">
+              <div className="relative h-[350px] w-full image-container rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/fd89ec7c-7967-42ef-a8d1-b9a93e43ac36.png" 
+                  alt="Vintage interiör med designmöbler och inredning" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
+              </div>
+              <div className="relative h-[200px] w-full image-container rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/e8bbdeb1-097c-4101-846d-828f9bdafaa3.png" 
+                  alt="Vintagemöbler i modern inredning" 
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
+              </div>
             </div>
           </div>
         </div>
