@@ -40,7 +40,7 @@ const HeroSection = () => {
         <img 
           src="/lovable-uploads/439c5560-76bf-49c6-8514-eced0f4e3485.png" 
           alt="Brukeriet Logo" 
-          className="w-72 md:w-96 mb-8 opacity-0 animate-fade-in"
+          className="w-[32rem] md:w-[40rem] lg:w-[48rem] mb-10 opacity-0 animate-fade-in"
           style={{
             animationDelay: '0.3s',
             animationFillMode: 'forwards'
