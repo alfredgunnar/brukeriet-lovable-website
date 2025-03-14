@@ -88,11 +88,15 @@ const InstagramCarousel = () => {
           <div className="flex items-center justify-center gap-2 mb-2">
             <Instagram className="h-5 w-5 text-custom-terra" />
             <h2 className="text-3xl md:text-4xl font-medium mt-4 mb-4 leading-tight text-custom-terra">
-              Vårt Instagram flöde
+              Det senaste från butiken
             </h2>
           </div>
           
           <div className="w-12 h-[2px] bg-custom-gold mx-auto mb-4"></div>
+          
+          <p className="max-w-xl mx-auto text-custom-brown text-base mb-4">
+            Det som är nytt i butiken läggs upp flera gånger i veckan som inlägg och stories på Instagram.
+          </p>
           
           <p className="max-w-xl mx-auto text-custom-brown text-base">
             Följ oss på <a 
