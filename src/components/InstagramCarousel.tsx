@@ -85,12 +85,9 @@ const InstagramCarousel = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <Instagram className="h-5 w-5 text-custom-terra" />
-            <h2 className="text-3xl md:text-4xl font-medium mt-4 mb-4 leading-tight text-custom-terra">
-              Det senaste från butiken
-            </h2>
-          </div>
+          <h2 className="text-3xl md:text-4xl font-medium mt-4 mb-4 leading-tight text-custom-terra">
+            Det senaste från butiken
+          </h2>
           
           <div className="w-12 h-[2px] bg-custom-gold mx-auto mb-4"></div>
           
