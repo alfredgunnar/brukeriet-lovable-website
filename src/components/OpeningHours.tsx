@@ -1,6 +1,7 @@
 
 import { Clock } from 'lucide-react';
 import { useEffect, useRef } from 'react';
+import { Card, CardContent } from '@/components/ui/card';
 
 const OpeningHours = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -30,64 +31,61 @@ const OpeningHours = () => {
     };
   }, []);
 
-  const hours = [
-    { day: 'Måndag', hours: 'Stängt' },
-    { day: 'Tisdag', hours: 'Stängt' },
-    { day: 'Onsdag', hours: 'Stängt' },
-    { day: 'Torsdag', hours: '11:00 - 16:00' },
-    { day: 'Fredag', hours: '11:00 - 16:00' },
-    { day: 'Lördag', hours: '11:00 - 16:00' },
-    { day: 'Söndag', hours: '11:00 - 15:00' },
+  // Group similar days together
+  const hourGroups = [
+    { days: 'Måndag - Onsdag', hours: 'Stängt' },
+    { days: 'Torsdag - Lördag', hours: '11:00 - 16:00' },
+    { days: 'Söndag', hours: '11:00 - 15:00' },
   ];
 
   return (
     <section 
       id="hours" 
       ref={sectionRef}
-      className="section py-24 px-6 bg-custom-brown"
+      className="section py-16 px-6 bg-custom-brown"
       style={{ '--section-index': '1' } as React.CSSProperties}
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-10">
           <span className="inline-block px-3 py-1 text-xs tracking-widest uppercase bg-custom-gold/20 text-custom-cream rounded-full">
             Besök Oss
           </span>
           
-          <h2 className="text-3xl md:text-4xl font-medium mt-4 mb-6 leading-tight text-custom-cream">
+          <h2 className="text-3xl md:text-4xl font-medium mt-4 mb-4 leading-tight text-custom-cream">
             Öppettider
           </h2>
           
-          <div className="w-16 h-[2px] bg-custom-gold mx-auto"></div>
+          <div className="w-12 h-[2px] bg-custom-gold mx-auto"></div>
         </div>
         
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-custom-cream/95 backdrop-blur-sm rounded-lg p-8 shadow-sm">
-            <div className="flex items-center justify-center mb-8">
-              <div className="w-16 h-16 rounded-full bg-custom-gold/10 flex items-center justify-center">
-                <Clock className="w-8 h-8 text-custom-gold" />
+        <Card className="max-w-md mx-auto bg-custom-cream/95 backdrop-blur-sm shadow-sm">
+          <CardContent className="pt-6">
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-full bg-custom-gold/10 flex items-center justify-center">
+                <Clock className="w-6 h-6 text-custom-gold" />
               </div>
             </div>
             
-            <div className="space-y-4">
-              {hours.map((item) => (
+            <div className="space-y-3">
+              {hourGroups.map((group) => (
                 <div 
-                  key={item.day}
-                  className="flex justify-between py-3 border-b border-custom-terra/10 last:border-b-0"
+                  key={group.days}
+                  className="flex justify-between items-center py-2 border-b border-custom-terra/10 last:border-b-0"
                 >
-                  <span className="font-medium text-custom-brown">{item.day}</span>
-                  <span className="text-custom-terra">{item.hours}</span>
+                  <span className="font-medium text-custom-brown">{group.days}</span>
+                  <span className="text-custom-terra">{group.hours}</span>
                 </div>
               ))}
             </div>
             
-            <div className="mt-8 pt-6 border-t border-custom-terra/10 text-center">
-              <p className="text-sm text-custom-brown">
+            <div className="mt-6 pt-4 border-t border-custom-terra/10 text-center">
+              <p className="text-xs text-custom-brown">
                 Specialbokningar finns tillgängliga för inredningsarkitekter och kommersiella projekt.
-                <br />Kontakta oss på <span className="text-custom-terra">bokning@brukeriet.com</span>
+                <span className="block mt-1 text-custom-terra">bokning@brukeriet.com</span>
               </p>
             </div>
-          </div>
-        </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );
