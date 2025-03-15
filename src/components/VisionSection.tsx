@@ -41,25 +41,29 @@ const VisionSection = () => {
           <div className="order-2 lg:order-1">
             <div className="space-y-6">              
               <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-terra">
-                Vår vision är ett hem där dåtid och framtid möts
+                Vår vintage-dröm på Spinneriet i Lindome
               </h2>
               
               <div className="w-16 h-[2px] bg-custom-gold"></div>
               
               <p className="text-custom-brown">
-                Hej! Vi som driver Brukeriet heter Olivia och Alfred. På fantastiska Spinneriet i Lindome från 1907 har vi samlat det vi själva älskar - tidlösa vintagemöbler och spännande nyproducerad svensk design med hållbarhet i fokus.
+                I det anrika Spinneriet från 1907 i Lindome har vi, ett par med en passion för det unika och en förkärlek för gamla möblers själ, öppnat vår drömbutik. Här samsas noga utvalda vintagefynd med nyproducerade pärlor från leverantörer som delar vårt engagemang för hållbarhet.
               </p>
               
               <p className="text-custom-brown">
-                När det gäller vintage handplockar vi varje unik pjäs för dess karaktär, kvalitet och den speciella känsla den förmedlar. Vi uppskattar patinan som kommer med ålder – de små imperfektionerna som avslöjar ett föremåls resa genom tiden.
+                Vi älskar att ge gamla möbler en ny chans med en skvätt linoljefärg, nytt tyg eller kanske bara nya beslag. Det ger en extra dos charm och möblerna blir redo för nya äventyr. Vi hoppas att de får sprida glädje i ditt hem i många år framöver.
               </p>
               
               <p className="text-custom-brown">
-                Samtidigt samarbetar vi med kreativa svenska formgivare som skapar allt från 3D-printade lampor av återvunnet material till linnetextilier tillverkade här i Sverige och ljushållare gjorda av spillmaterial från stålindustrin. Allt har en tanke och en historia.
+                Så ta en tur till Spinneriet i Lindome, låt dig inspireras av vår blandning av gammalt och nytt, och hitta de där speciella detaljerna som gör ditt hem till en plats där du trivs. Vi ser fram emot att träffa dig!
               </p>
               
               <p className="text-custom-terra font-medium">
-                Vi vill att du ska hitta både de perfekta vintagepjäserna och de moderna, hållbara detaljerna som tillsammans skapar ett personligt hem. Välkommen in och låt dig inspireras!
+                Varmt välkommen!
+              </p>
+              
+              <p className="text-custom-terra font-medium italic">
+                / Olivia & Alfred
               </p>
             </div>
           </div>
@@ -72,6 +76,9 @@ const VisionSection = () => {
                   alt="Vintage interiör med designmöbler och inredning" 
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
+                  width="700"
+                  height="350"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
               </div>
@@ -81,6 +88,9 @@ const VisionSection = () => {
                   alt="Vintagemöbler i modern inredning" 
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   loading="lazy"
+                  width="700"
+                  height="350"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
               </div>
@@ -90,6 +100,9 @@ const VisionSection = () => {
                   alt="Eleganta vintage designföremål" 
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   loading="lazy"
+                  width="1400"
+                  height="250"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
               </div>
