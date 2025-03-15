@@ -142,6 +142,9 @@ const InstagramCarousel = () => {
                       alt="Butiken"
                       className="w-full h-full object-cover"
                       loading="lazy"
+                      width="400"
+                      height="400"
+                      decoding="async"
                     />
                   </div>
                 </CarouselItem>

@@ -1,3 +1,4 @@
+
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
@@ -39,6 +40,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+        env:
+          NODE_ENV: production
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
