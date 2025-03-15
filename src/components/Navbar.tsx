@@ -1,9 +1,13 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Menu, X } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const isMobile = useIsMobile();
   
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +20,12 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrolled]);
+
+  const navItems = [
+    { name: 'Vår dröm', href: '#vision' },
+    { name: 'Öppettider', href: '#hours' },
+    { name: 'Hitta hit', href: '#location' },
+  ];
 
   return (
     <nav
@@ -38,21 +48,40 @@ const Navbar = () => {
           />
         </a>
         
-        <div className="hidden md:flex items-center space-x-8">
-          {[
-            { name: 'Vision', href: '#vision' },
-            { name: 'Öppettider', href: '#hours' },
-            { name: 'Hitta hit', href: '#location' },
-          ].map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-sm font-medium uppercase tracking-wide text-custom-brown hover:text-[#0047AB] transition-colors"
-            >
-              {item.name}
-            </a>
-          ))}
-        </div>
+        {isMobile ? (
+          <Sheet>
+            <SheetTrigger asChild>
+              <button className="p-2 text-custom-brown">
+                <Menu size={24} />
+              </button>
+            </SheetTrigger>
+            <SheetContent className="bg-custom-cream">
+              <div className="flex flex-col space-y-6 pt-10">
+                {navItems.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-lg font-medium uppercase tracking-wide text-custom-brown hover:text-[#0047AB] transition-colors"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </SheetContent>
+          </Sheet>
+        ) : (
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-sm font-medium uppercase tracking-wide text-custom-brown hover:text-[#0047AB] transition-colors"
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </nav>
   );
