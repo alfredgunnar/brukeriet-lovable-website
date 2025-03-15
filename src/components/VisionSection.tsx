@@ -68,7 +68,7 @@ const VisionSection = () => {
             </div>
           </div>
           
-          <div className="order-2 lg:order-2">
+          <div className="order-2 lg:order-2 w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="relative h-[350px] w-full image-container rounded-lg overflow-hidden shadow-lg">
                 <img 
