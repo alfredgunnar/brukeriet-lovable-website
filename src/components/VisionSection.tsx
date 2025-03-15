@@ -37,8 +37,8 @@ const VisionSection = () => {
       style={{ '--section-index': '0' } as React.CSSProperties}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-          <div className="order-2 lg:order-1">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+          <div className="order-1 lg:order-1">
             <div className="space-y-6">              
               <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-terra">
                 Vår vintage-dröm på Spinneriet i Lindome
@@ -68,7 +68,7 @@ const VisionSection = () => {
             </div>
           </div>
           
-          <div className="order-1 lg:order-2">
+          <div className="order-2 lg:order-2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="relative h-[350px] w-full image-container rounded-lg overflow-hidden shadow-lg">
                 <img 
