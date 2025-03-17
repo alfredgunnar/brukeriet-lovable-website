@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 
 const VisionSection = () => {
@@ -46,15 +47,19 @@ const VisionSection = () => {
               <div className="w-16 h-[2px] bg-custom-gold"></div>
 
               <p className="text-custom-brown">
-                I det anrika Spinneriet från 1907 i Lindome har vi, ett par med en passion för det unika och en förkärlek för gamla möblers själ, öppnat vår drömbutik. Här samsas noga utvalda vintagefynd med nyproducerade pärlor från leverantörer som delar vårt engagemang för hållbarhet.
+                I det anrika Spinneriet från 1907 i Lindome har vi, Olivia & Alfred, med en passion för det unika och en förkärlek för gamla möblers själ, öppnat vår drömbutik. Välkommen till en plats där noga utvalda vintagefynd samsas med nyproducerade pärlor från leverantörer som delar vårt engagemang för hållbarhet.
               </p>
 
               <p className="text-custom-brown">
-                Vi älskar att ge gamla möbler en ny chans med en skvätt linoljefärg, nytt tyg eller kanske bara nya beslag. Det ger en extra dos charm och möblerna blir redo för nya äventyr. Vi hoppas att de får sprida glädje i ditt hem i många år framöver.
+                Vi brinner för att ge gamla möbler ett nytt liv – kanske med en skvätt linoljefärg, nytt tyg eller bara nya beslag. Det ger varje möbel en extra dos charm och gör den redo för nya äventyr i ditt hem, där den förhoppningsvis får sprida glädje i många år framöver.
               </p>
 
               <p className="text-custom-brown">
-                Så ta en tur till Spinneriet i Lindome, låt dig inspireras av vår blandning av gammalt och nytt, och hitta de där speciella detaljerna som gör ditt hem till en plats där du trivs. Vi ser fram emot att träffa dig!
+                I vår butik hittar du allt från unika vintagemöbler och -lampor till textilier, handplockad keramik och glas från olika tidsepoker, samt vackra trädgårdsföremål. Vi är också stolta återförsäljare av svensk design från varumärken som Växbo Lin, Karlskrona Lampfabrik och Iris Hantverk.
+              </p>
+
+              <p className="text-custom-brown">
+                Ta en tur till Spinneriet i Lindome, låt dig inspireras av vår blandning av gammalt och nytt, och hitta de där speciella detaljerna som gör ditt hem till en plats där du verkligen trivs. Vi ser fram emot att träffa dig!
               </p>
 
               <p className="text-custom-terra font-medium">
