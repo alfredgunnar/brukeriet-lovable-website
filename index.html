@@ -1,12 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brukeriet</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-    <meta property="og:image" content="/og-image.png" />
+    <title>Brukeriet - Vintage, återbruk & svensk design | Spinneriet Lindome</title>
+    <meta name="description" content="Brukeriet erbjuder noga utvalda vintagemöbler och inredningsdetaljer i Spinneriet, Lindome. Besök vår butik för en blandning av unikt gammalt och nytt." />
+    <meta name="author" content="Brukeriet" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://brukeriet.se/" />
+    <meta property="og:title" content="Brukeriet - Vintage, återbruk & svensk design" />
+    <meta property="og:description" content="Upptäck unika vintagemöbler och inredningsdetaljer i vår butik på Spinneriet i Lindome." />
+    <meta property="og:image" content="/lovable-uploads/Brukeriet-25.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://brukeriet.se/" />
+    <meta property="twitter:title" content="Brukeriet - Vintage, återbruk & svensk design" />
+    <meta property="twitter:description" content="Upptäck unika vintagemöbler och inredningsdetaljer i vår butik på Spinneriet i Lindome." />
+    <meta property="twitter:image" content="/lovable-uploads/Brukeriet-25.jpg" />
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://brukeriet.se/" />
+    
+    <!-- Keywords (less important nowadays but still helpful) -->
+    <meta name="keywords" content="vintage, återbruk, inredning, möbler, Lindome, Spinneriet, vintage butik, second hand, inredningsbutik" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/lovable-uploads/71041a7c-3bba-476c-9224-d65de5e0078c.png" />
   </head>
 
   <body>
@@ -14,5 +37,45 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Brukeriet",
+        "description": "Vintage, återbruk och svensk design",
+        "url": "https://brukeriet.se",
+        "telephone": "",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Spinnmästarevägen 2, våning 2",
+          "addressLocality": "Lindome",
+          "postalCode": "437 34",
+          "addressCountry": "SE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "57.6165978",
+          "longitude": "12.0986673"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Thursday", "Friday", "Saturday"],
+            "opens": "11:00",
+            "closes": "16:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "11:00",
+            "closes": "15:00"
+          }
+        ],
+        "image": "/lovable-uploads/Brukeriet-25.jpg",
+        "priceRange": "$$"
+      }
+    </script>
   </body>
 </html>

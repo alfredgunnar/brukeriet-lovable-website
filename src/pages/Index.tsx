@@ -1,5 +1,6 @@
 
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import VisionSection from '@/components/VisionSection';
@@ -16,18 +17,26 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <main>
-        <HeroSection />
-        <VisionSection />
-        <InstagramCarousel />
-        <OpeningHours />
-        <LocationSection />
-        <FullWidthImageSection />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <Helmet>
+        <title>Brukeriet - Vintage, återbruk & svensk design | Spinneriet Lindome</title>
+        <meta name="description" content="Upptäck Brukeriet, en vintage- och återbruksbutik i det anrika Spinneriet i Lindome. Vi erbjuder noga utvalda vintagefynd och hållbar inredning." />
+      </Helmet>
+      <div className="min-h-screen flex flex-col">
+        <header>
+          <Navbar />
+        </header>
+        <main>
+          <HeroSection />
+          <VisionSection />
+          <InstagramCarousel />
+          <OpeningHours />
+          <LocationSection />
+          <FullWidthImageSection />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 };
 
