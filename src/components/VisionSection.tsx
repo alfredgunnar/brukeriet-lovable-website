@@ -47,23 +47,20 @@ const VisionSection = () => {
               <div className="w-16 h-[2px] bg-custom-gold"></div>
 
               <p className="text-custom-brown">
-                I det anrika Spinneriet från 1907 i Lindome har vi, Olivia & Alfred, med en passion för det unika och en förkärlek för gamla möblers själ, öppnat vår drömbutik. Välkommen till en plats där noga utvalda vintagefynd samsas med nyproducerade pärlor från leverantörer som delar vårt engagemang för hållbarhet.
+                Hej!
+                I det gamla Spinneriet från 1907 i Lindome har vi, Olivia & Alfred, öppnat vår lilla drömbutik. Här hittar du en härlig mix av gamla möbler, unika prylar och nya, hållbart producerad interiör.
               </p>
 
               <p className="text-custom-brown">
-                Vi brinner för att ge gamla möbler ett nytt liv – kanske med en skvätt linoljefärg, nytt tyg eller bara nya beslag. Det ger varje möbel en extra dos charm och gör den redo för nya äventyr i ditt hem, där den förhoppningsvis får sprida glädje i många år framöver.
+                Vi älskar att ge gamla möbler en ny chans. En skvätt linoljefärg, lite nytt tyg eller kanske bara nya knoppar – det gör susen! Vi hoppas att våra möbler ska få sprida glädje i ditt hem i många år framöver.
               </p>
 
               <p className="text-custom-brown">
-                I vår butik hittar du allt från unika vintagemöbler och -lampor till textilier, handplockad keramik och glas från olika tidsepoker, samt vackra trädgårdsföremål. Vi är också stolta återförsäljare av svensk design från varumärken som Växbo Lin, Karlskrona Lampfabrik och Iris Hantverk.
-              </p>
-
-              <p className="text-custom-brown">
-                Ta en tur till Spinneriet i Lindome, låt dig inspireras av vår blandning av gammalt och nytt, och hitta de där speciella detaljerna som gör ditt hem till en plats där du verkligen trivs. Vi ser fram emot att träffa dig!
+                Så kom förbi Spinneriet, ta en fika hos någon av våra café-grannar och kika runt. Vi snackar gärna inredning och hjälper dig att hitta de där speciella detaljerna som gör ditt hem till en plats där du verkligen trivs.
               </p>
 
               <p className="text-custom-terra font-medium">
-                Varmt välkommen!
+                Välkommen in!
               </p>
 
               <p className="text-custom-terra font-medium italic">
