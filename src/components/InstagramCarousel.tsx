@@ -1,4 +1,3 @@
-
 import { useEffect, useState, useRef } from 'react';
 import { Instagram } from 'lucide-react';
 import {
@@ -119,7 +118,7 @@ const InstagramCarousel = () => {
 
   return (
     <section ref={sectionRef} className="py-16 md:py-20 bg-custom-brown bg-opacity-10 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/61c81ec4-6269-4076-9d95-577ff45a1f98.png')] bg-cover bg-center opacity-5"></div>
+      <div className="absolute inset-0 bg-[url('lovable-uploads/61c81ec4-6269-4076-9d95-577ff45a1f98.png')] bg-cover bg-center opacity-5"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div
@@ -138,7 +137,7 @@ const InstagramCarousel = () => {
                 <CarouselItem key={post.id} className="pl-4 md:pl-6 md:basis-1/2 lg:basis-1/3">
                   <div className="aspect-square relative overflow-hidden rounded-lg shadow-lg">
                     <img
-                      src={post.imageUrl}
+                      src={post.imageUrl.replace(/^\//, '')}
                       alt="Butiken"
                       className="w-full h-full object-cover"
                       loading="lazy"

@@ -1,4 +1,3 @@
-
 import { Clock, Instagram } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -47,7 +46,7 @@ const OpeningHours = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <img
-          src="/lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png"
+          src="lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png"
           alt="Background"
           className="w-full h-full object-cover opacity-20"
         />
