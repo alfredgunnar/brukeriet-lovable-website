@@ -142,7 +142,9 @@ const InstagramCarousel = () => {
             opts={{
               align: "start",
               loop: true,
-              dragFree: true, // Makes swiping more responsive
+              dragFree: false, // Changed to false for controlled swipe behavior
+              skipSnaps: false, // Ensures the carousel stops at each slide
+              containScroll: "trimSnaps" // Helps with containing scroll behavior
             }}
             className="w-full"
           >
