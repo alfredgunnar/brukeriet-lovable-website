@@ -1,5 +1,7 @@
+
 import { useEffect, useState, useRef } from 'react';
-import { Instagram } from 'lucide-react';
+import { Instagram, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 import {
   Carousel,
   CarouselContent,
@@ -17,6 +19,7 @@ interface InstagramPost {
 const InstagramCarousel = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const isMobile = useIsMobile();
 
   // Updated photo collection with the requested images
   const instagramPosts: InstagramPost[] = [
@@ -125,26 +128,48 @@ const InstagramCarousel = () => {
           className={`max-w-6xl mx-auto transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
+          {/* Mobile swipe hint */}
+          {isMobile && (
+            <div className="flex justify-center items-center mb-4 text-royal">
+              <ChevronLeft size={20} className="animate-pulse" />
+              <span className="mx-2 text-sm">Swipe</span>
+              <ChevronRight size={20} className="animate-pulse" />
+            </div>
+          )}
+          
           <Carousel
             opts={{
               align: "start",
               loop: true,
+              dragFree: true, // Makes swiping more responsive
             }}
             className="w-full"
           >
             <CarouselContent className="-ml-4 md:-ml-6">
               {instagramPosts.map((post) => (
                 <CarouselItem key={post.id} className="pl-4 md:pl-6 md:basis-1/2 lg:basis-1/3">
-                  <div className="aspect-square relative overflow-hidden rounded-lg shadow-lg">
+                  <div className="aspect-square relative overflow-hidden rounded-lg shadow-lg group">
                     <img
                       src={post.imageUrl.replace(/^\//, '')}
                       alt="Butiken"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       loading="lazy"
                       width="400"
                       height="400"
                       decoding="async"
                     />
+                    
+                    {/* Touch overlay indicator visible only on mobile */}
+                    {isMobile && (
+                      <div className="absolute inset-0 flex items-center justify-between pointer-events-none px-2 opacity-70">
+                        <div className="bg-white/30 p-1 rounded-full">
+                          <ChevronLeft size={20} className="text-white" />
+                        </div>
+                        <div className="bg-white/30 p-1 rounded-full">
+                          <ChevronRight size={20} className="text-white" />
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </CarouselItem>
               ))}
@@ -159,7 +184,7 @@ const InstagramCarousel = () => {
               href="https://instagram.com/brukeriet"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-royal text-cream px-6 py-3 rounded-md hover:bg-opacity-90 transition-colors"
+              className="inline-flex items-center bg-royal text-cream px-6 py-3 rounded-md hover:bg-opacity-90 transition-colors mt-4"
             >
               <Instagram size={20} className="mr-2" />
               brukeriet
