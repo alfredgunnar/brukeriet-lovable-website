@@ -56,7 +56,7 @@ const LocationSection = () => {
                   className="text-custom-gold hover:text-custom-terra transition-colors underline"
                 >
                   Spinneriet i Lindome
-                </a>. Vi finns på våning 2 och hoppas få fylla dig med vintageinspiration och kanske till och med berika ditt hem med någon ny inredningdetalj.
+                </a>. Vi finns på våning 2.
               </p>
 
               <div className="mt-8 space-y-8">
