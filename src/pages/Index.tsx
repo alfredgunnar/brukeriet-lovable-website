@@ -1,12 +1,11 @@
-
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import VisionSection from '@/components/VisionSection';
+import VarDromSection from '@/components/VarDromSection';
 import InstagramCarousel from '@/components/InstagramCarousel';
-import OpeningHours from '@/components/OpeningHours';
-import LocationSection from '@/components/LocationSection';
+import OppettiderSection from '@/components/OppettiderSection';
+import HittaHitSection from '@/components/HittaHitSection';
 import FullWidthImageSection from '@/components/FullWidthImageSection';
 import Footer from '@/components/Footer';
 
@@ -28,10 +27,10 @@ const Index = () => {
         </header>
         <main>
           <HeroSection />
-          <VisionSection />
+          <VarDromSection />
           <InstagramCarousel />
-          <OpeningHours />
-          <LocationSection />
+          <OppettiderSection />
+          <HittaHitSection />
           <FullWidthImageSection />
         </main>
         <Footer />
