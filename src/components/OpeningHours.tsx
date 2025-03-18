@@ -38,7 +38,7 @@ const OpeningHours = () => {
 
   return (
     <section
-      id="hours"
+      id="oppettider"
       ref={sectionRef}
       className="section py-16 px-6 bg-custom-brown relative"
       style={{ '--section-index': '1' } as React.CSSProperties}

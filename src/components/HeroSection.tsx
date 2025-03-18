@@ -57,7 +57,7 @@ const HeroSection = () => {
         </p>
 
         <a
-          href="#vision"
+          href="#var-drom"
           className="px-8 py-3 bg-custom-gold/90 text-white font-medium uppercase tracking-wider rounded-md shadow-lg hover:bg-custom-gold transition-all transform hover:translate-y-[-2px] focus:ring-2 focus:ring-custom-terra focus:ring-offset-2 opacity-0 animate-fade-in"
           style={{
             animationDelay: '0.7s',

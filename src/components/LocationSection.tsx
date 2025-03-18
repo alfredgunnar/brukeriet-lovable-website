@@ -33,7 +33,7 @@ const LocationSection = () => {
 
   return (
     <section
-      id="location"
+      id="hitta-hit"
       ref={sectionRef}
       className="section py-24 px-6 bg-custom-cream"
       style={{ '--section-index': '2' } as React.CSSProperties}

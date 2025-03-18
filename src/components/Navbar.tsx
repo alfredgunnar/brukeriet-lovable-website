@@ -21,9 +21,9 @@ const Navbar = () => {
   }, [scrolled]);
 
   const navItems = [
-    { name: 'Vår dröm', href: '#vision' },
-    { name: 'Öppettider', href: '#hours' },
-    { name: 'Hitta hit', href: '#location' },
+    { name: 'Vår dröm', href: '#var-drom' },
+    { name: 'Öppettider', href: '#oppettider' },
+    { name: 'Hitta hit', href: '#hitta-hit' },
   ];
 
   return (
