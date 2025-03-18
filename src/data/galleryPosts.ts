@@ -1,11 +1,10 @@
-
-export interface InstagramPost {
+export interface GalleryPost {
   id: string | number;
   imageUrl: string;
   url?: string;
 }
 
-export const instagramPosts: InstagramPost[] = [
+export const galleryPosts: GalleryPost[] = [
   {
     id: 1,
     imageUrl: "lovable-uploads/29F86351-37E8-468E-93A7-0F224F0EF290.JPG",

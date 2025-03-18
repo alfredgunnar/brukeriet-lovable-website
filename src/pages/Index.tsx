@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import VarDromSection from '@/components/VarDromSection';
-import InstagramCarousel from '@/components/InstagramCarousel';
+import GallerySection from '@/components/GallerySection';
 import OppettiderSection from '@/components/OppettiderSection';
 import HittaHitSection from '@/components/HittaHitSection';
 import FullWidthImageSection from '@/components/FullWidthImageSection';
@@ -28,7 +28,7 @@ const Index = () => {
         <main>
           <HeroSection />
           <VarDromSection />
-          <InstagramCarousel />
+          <GallerySection />
           <OppettiderSection />
           <HittaHitSection />
           <FullWidthImageSection />

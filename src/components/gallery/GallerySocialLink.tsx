@@ -1,11 +1,10 @@
-
 import { Instagram } from 'lucide-react';
 
-const InstagramCallToAction = () => {
+const GallerySocialLink = () => {
   return (
     <div className="mt-10 text-center">
       <p className="text-cream hover:bg-opacity-90 transition-colors">
-        På vår Instagram får du en inblick i vad som finns inne just nu.
+        Följ oss på Instagram för att se mer av vårt sortiment, och vad som finns inne just nu.
       </p>
       <a
         href="https://instagram.com/brukeriet"
@@ -20,4 +19,4 @@ const InstagramCallToAction = () => {
   );
 };
 
-export default InstagramCallToAction;
+export default GallerySocialLink;

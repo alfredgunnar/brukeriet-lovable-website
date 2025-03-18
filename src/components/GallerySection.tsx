@@ -1,19 +1,17 @@
-
 import { useRef } from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useElementVisibility } from '@/hooks/use-element-visibility';
-import { instagramPosts } from '@/data/instagramPosts';
+import { galleryPosts } from '@/data/galleryPosts';
 import {
   Carousel,
   CarouselContent,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import InstagramCarouselItem from './instagram/InstagramCarouselItem';
-import MobileSwipeHint from './instagram/MobileSwipeHint';
-import InstagramCallToAction from './instagram/InstagramCallToAction';
+import GalleryCarouselItem from './gallery/GalleryCarouselItem';
+import GallerySocialLink from './gallery/GallerySocialLink';
 
-const InstagramCarousel = () => {
+const GallerySection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isVisible = useElementVisibility(sectionRef);
   const isMobile = useIsMobile();
@@ -27,9 +25,6 @@ const InstagramCarousel = () => {
           className={`max-w-6xl mx-auto transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
         >
-          {/* Mobile swipe hint */}
-          {isMobile && <MobileSwipeHint />}
-          
           <Carousel
             opts={{
               align: "start",
@@ -41,11 +36,11 @@ const InstagramCarousel = () => {
             className="w-full"
           >
             <CarouselContent className="-ml-4 md:-ml-6">
-              {instagramPosts.map((post) => (
-                <InstagramCarouselItem 
+              {galleryPosts.map((post) => (
+                <GalleryCarouselItem
                   key={post.id}
-                  post={post} 
-                  isMobile={isMobile} 
+                  post={post}
+                  isMobile={isMobile}
                 />
               ))}
             </CarouselContent>
@@ -53,11 +48,11 @@ const InstagramCarousel = () => {
             <CarouselNext className="hidden md:flex -right-5 border-royal text-royal hover:bg-royal hover:text-cream" />
           </Carousel>
 
-          <InstagramCallToAction />
+          <GallerySocialLink />
         </div>
       </div>
     </section>
   );
 };
 
-export default InstagramCarousel;
+export default GallerySection;
