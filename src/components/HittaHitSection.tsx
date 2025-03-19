@@ -1,3 +1,4 @@
+
 import { MapPin, Mail, Bus, Car } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { Button } from './ui/button';
@@ -35,37 +36,27 @@ const HittaHitSection = () => {
     <section
       id="hitta-hit"
       ref={sectionRef}
-      className="section py-24 px-6 bg-custom-cream"
+      className="section py-24 px-6 bg-gray-50"
       style={{ '--section-index': '2' } as React.CSSProperties}
     >
       <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-medium mb-4 leading-tight text-custom-brown">
+            Hitta hit
+          </h2>
+          <div className="w-16 h-[2px] bg-custom-gold mx-auto mb-6"></div>
+        </div>
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           <div>
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-brown">
-                Hitta hit
-              </h2>
-
-              <div className="w-16 h-[2px] bg-custom-gold"></div>
-
-              <p className="text-custom-brown">
-                Välkommen till vår butik på <a
-                  href="https://www.spinnerietlindome.se/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-custom-gold hover:text-custom-terra transition-colors underline"
-                >
-                  Spinneriet i Lindome
-                </a>. Vi finns på våning 2.
-              </p>
-
-              <div className="mt-8 space-y-8">
+            <Card className="p-8 bg-white shadow-lg border-0 hover-scale">
+              <div className="space-y-8">
                 <div className="flex items-start">
-                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-custom-gold" />
+                  <div className="mt-1 mr-4 w-12 h-12 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
+                    <MapPin className="w-6 h-6 text-custom-gold" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-2 text-custom-terra">Adress</h3>
+                    <h3 className="text-xl font-medium mb-3 text-custom-terra">Adress</h3>
                     <p className="text-custom-brown">
                       Spinnmästarevägen 2, våning 2<br />
                       437 34 Lindome
@@ -74,11 +65,11 @@ const HittaHitSection = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
-                    <Bus className="w-5 h-5 text-custom-gold" />
+                  <div className="mt-1 mr-4 w-12 h-12 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
+                    <Bus className="w-6 h-6 text-custom-gold" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-2 text-custom-terra">Kollektivtrafik</h3>
+                    <h3 className="text-xl font-medium mb-3 text-custom-terra">Kollektivtrafik</h3>
                     <p className="text-custom-brown">
                       Pendeltåg från Göteborg eller Kungsbacka till Lindome station. Därifrån tar du buss 761 mot Mölndal och går av vid Annestorpsvägen.
                       <br /><br />
@@ -88,11 +79,11 @@ const HittaHitSection = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
-                    <Car className="w-5 h-5 text-custom-gold" />
+                  <div className="mt-1 mr-4 w-12 h-12 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
+                    <Car className="w-6 h-6 text-custom-gold" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-2 text-custom-terra">Parkering</h3>
+                    <h3 className="text-xl font-medium mb-3 text-custom-terra">Parkering</h3>
                     <p className="text-custom-brown">
                       Det finns gott om gratis parkering precis utanför Spinneriet, så det är enkelt att besöka oss med bil.
                     </p>
@@ -100,24 +91,37 @@ const HittaHitSection = () => {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="mt-1 mr-4 w-10 h-10 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5 text-custom-gold" />
+                  <div className="mt-1 mr-4 w-12 h-12 rounded-full bg-custom-gold/10 flex items-center justify-center shrink-0">
+                    <Mail className="w-6 h-6 text-custom-gold" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-2 text-custom-terra">E-post</h3>
+                    <h3 className="text-xl font-medium mb-3 text-custom-terra">E-post</h3>
                     <p className="text-custom-brown">
                       info@brukeriet.se
                     </p>
                   </div>
                 </div>
+                
+                <div className="pt-4 mt-4 border-t border-gray-100">
+                  <p className="text-custom-brown">
+                    Välkommen till vår butik på <a
+                      href="https://www.spinnerietlindome.se/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-custom-gold hover:text-custom-terra transition-colors underline"
+                    >
+                      Spinneriet i Lindome
+                    </a>. Vi finns på våning 2.
+                  </p>
+                </div>
               </div>
-            </div>
+            </Card>
           </div>
 
           <div>
-            <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-lg">
+            <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-xl border border-gray-100 hover-scale">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.553837375168!2d12.0986673!3d57.6165978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff0ea4b8b2a7b%3A0x3b20d78133d980c6!2sSpinnm%C3%A4starev%C3%A4gen%202%2C%20437%2034%20Lindome!5e0!3m2!1ssv!2sse!4v1717073883764!5m2!1ssv!2sse&maptype=satellite"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.553837375168!2d12.0986673!3d57.6165978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff0ea4b8b2a7b%3A0x3b20d78133d980c6!2sSpinnm%C3%A4starev%C3%A4gen%202%2C%20437%2034%20Lindome!5e0!3m2!1ssv!2sse!4v1717073883764!5m2!1ssv!2sse"
                 className="w-full h-full border-0"
                 style={{ border: 0 }}
                 allowFullScreen={true}
