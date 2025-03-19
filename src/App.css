@@ -58,7 +58,7 @@
 .bright-card {
   background-color: #fff;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
-  border-radius: 0.5rem;
+  border-radius: 0;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -78,4 +78,26 @@
 
 .hover-scale:hover {
   transform: scale(1.03);
+}
+
+/* Remove rounded corners from all buttons */
+button, 
+a.btn,
+.btn,
+input,
+select,
+textarea,
+.card,
+.rounded,
+.rounded-md,
+.rounded-lg,
+.rounded-xl,
+.rounded-full,
+.rounded-sm {
+  border-radius: 0 !important;
+}
+
+/* Ensure images don't have rounded corners */
+img {
+  border-radius: 0 !important;
 }

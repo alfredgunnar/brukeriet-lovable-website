@@ -61,7 +61,7 @@ const OppettiderSection = () => {
         <Card className="max-w-md mx-auto bg-white shadow-lg border border-gray-100 hover-scale">
           <CardContent className="pt-8 pb-6">
             <div className="flex items-center justify-center mb-8">
-              <div className="w-14 h-14 rounded-full bg-custom-gold/10 flex items-center justify-center">
+              <div className="w-14 h-14 bg-custom-gold/10 flex items-center justify-center">
                 <Clock className="w-7 h-7 text-custom-gold" />
               </div>
             </div>
