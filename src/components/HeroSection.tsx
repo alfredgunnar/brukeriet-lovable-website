@@ -32,7 +32,7 @@ const HeroSection = () => {
       />
 
       {/* Enhanced overlay with stronger gradient for better text contrast */}
-      <div className="absolute inset-0 bg-gradient-to-b from-custom-brown/60 to-custom-terra/70" />
+      <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
       <div className="relative h-full flex flex-col items-center justify-center px-6 text-center">
