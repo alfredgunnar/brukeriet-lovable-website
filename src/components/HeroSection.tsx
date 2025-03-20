@@ -47,19 +47,9 @@ const HeroSection = () => {
           }}
         />
 
-        <p
-          className="max-w-xl text-xl md:text-2xl text-white mb-8 drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] opacity-0 animate-fade-in"
-          style={{
-            animationDelay: '0.5s',
-            animationFillMode: 'forwards'
-          }}
-        >
-          Vintage, återbruk och svensk design
-        </p>
-
         <a
           href="#var-drom"
-          className="px-8 py-3 bg-custom-gold/90 text-white font-medium uppercase tracking-wider shadow-lg hover:bg-custom-gold transition-all transform hover:translate-y-[-2px] focus:ring-2 focus:ring-custom-terra focus:ring-offset-2 opacity-0 animate-fade-in"
+          className="px-8 py-3 bg-custom-terra text-white font-medium uppercase tracking-wider shadow-lg hover:bg-custom-terra/90 transition-all transform hover:translate-y-[-2px] focus:ring-2 focus:ring-custom-terra focus:ring-offset-2 opacity-0 animate-fade-in"
           style={{
             animationDelay: '0.7s',
             animationFillMode: 'forwards'
