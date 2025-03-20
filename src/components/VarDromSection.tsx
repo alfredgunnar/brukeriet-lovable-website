@@ -33,7 +33,7 @@ const VarDromSection = () => {
 
             <div className="w-16 h-[2px] bg-custom-gold"></div>
 
-            <p className="text-custom-brown">Hej! I det gamla Spinneriet från 1907 i Lindome har vi, Olivia &amp; Alfred, öppnat vår lilla drömbutik. Här hittar du en härlig mix av gamla möbler, unika prylar och ny, hållbart producerad interiör.</p>
+            <p className="text-custom-brown">I det gamla Spinneriet från 1907 i Lindome har vi, Olivia &amp; Alfred, öppnat vår drömbutik. Här hittar du en härlig mix av gamla möbler, unika prylar och ny, hållbart producerad interiör.</p>
 
             <p className="text-custom-brown">
               Vi älskar att ge gamla möbler en ny chans. En skvätt linoljefärg, lite nytt tyg eller kanske bara nya knoppar – det gör susen! Vi hoppas att våra möbler ska få sprida glädje i ditt hem i många år framöver.
