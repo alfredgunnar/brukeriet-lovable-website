@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 const VarDromSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -34,11 +33,9 @@ const VarDromSection = () => {
 
             {/* Separator removed */}
 
-            <p className="text-custom-brown">I det gamla Spinneriet från 1907 i Lindome har vi, Olivia &amp; Alfred, öppnat vår drömbutik. Här hittar du en härlig mix av gamla möbler, unika prylar och ny, hållbart producerad interiör.</p>
+            <p className="text-custom-brown">I det gamla Spinneriet från 1907 i Lindome har vi, Olivia & Alfred, öppnat vår drömbutik. Här hittar du en härlig mix av gamla möbler, unika prylar och ny, hållbart producerad interiör. Brukeriet är vår lekplats, där vi får utlopp för vår kreativitet.</p>
 
-            <p className="text-custom-brown">
-              Vi älskar att ge gamla möbler en ny chans. En skvätt linoljefärg, lite nytt tyg eller kanske bara nya knoppar – det gör susen! Vi hoppas att våra möbler ska få sprida glädje i ditt hem i många år framöver.
-            </p>
+            <p className="text-custom-brown">Vi älskar att ge gamla möbler en ny chans. En skvätt linoljefärg, lite nytt tyg eller kanske bara nya knoppar – det gör susen! Här testar vi olika kulörer, blandar material och texturer för att skapa unika uttryck. Och ja, vi älskar färgklickar! Vi hoppas att våra möbler ska få sprida glädje i ditt hem i många år framöver.</p>
 
             <p className="text-custom-brown">
               Så kom förbi Spinneriet, ta en fika hos någon av våra café-grannar och kika runt. Vi snackar gärna inredning och hjälper dig att hitta de där speciella detaljerna som gör ditt hem till en plats där du verkligen trivs.
