@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 
 const HeroSection = () => {
@@ -18,7 +19,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-[600px] md:h-[700px] w-full overflow-hidden">
       {/* Background image with parallax effect */}
       <div
         ref={containerRef}
@@ -58,7 +59,7 @@ const HeroSection = () => {
 
         <a
           href="#var-drom"
-          className="px-8 py-3 bg-custom-gold/90 text-white font-medium uppercase tracking-wider rounded-md shadow-lg hover:bg-custom-gold transition-all transform hover:translate-y-[-2px] focus:ring-2 focus:ring-custom-terra focus:ring-offset-2 opacity-0 animate-fade-in"
+          className="px-8 py-3 bg-custom-gold/90 text-white font-medium uppercase tracking-wider shadow-lg hover:bg-custom-gold transition-all transform hover:translate-y-[-2px] focus:ring-2 focus:ring-custom-terra focus:ring-offset-2 opacity-0 animate-fade-in"
           style={{
             animationDelay: '0.7s',
             animationFillMode: 'forwards'
