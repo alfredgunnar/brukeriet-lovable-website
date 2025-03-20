@@ -27,13 +27,13 @@ const VarDromSection = () => {
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
         <div className="order-1 lg:order-1">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-terra">Unik interiör och hållbar design</h2>
+            <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-terra">Hej! 👋🏻</h2>
 
             {/* Separator removed */}
 
-            <p className="text-custom-brown">I det gamla Spinneriet från 1907 i Lindome har vi, Olivia & Alfred, öppnat vår drömbutik. Här hittar du en härlig mix av gamla möbler, unika prylar och ny, hållbart producerad interiör. Brukeriet är vår lekplats, där vi får utlopp för vår kreativitet.</p>
+            <p className="text-custom-brown">I det gamla Spinneriet från 1907 i Lindome har vi, Olivia & Alfred, öppnat Brukeriet. Här hittar du en handplockad mix av gamla möbler, unika prylar och ny, hållbart producerad inredning. Brukeriet är vår lekplats, där vi får utlopp för vår kreativitet.</p>
 
-            <p className="text-custom-brown">Vi älskar att ge gamla möbler en ny chans. En skvätt linoljefärg, lite nytt tyg eller kanske bara nya knoppar – det gör susen! Här testar vi olika kulörer, blandar material och texturer för att skapa unika uttryck. Och ja, vi älskar färgklickar! Vi hoppas att våra möbler ska få sprida glädje i ditt hem i många år framöver.</p>
+            <p className="text-custom-brown">Vi älskar att ge gamla möbler en ny chans. En skvätt linoljefärg, lite nytt tyg eller kanske bara nya beslag – det gör susen! Här testar vi olika kulörer, blandar material och texturer för att skapa unika uttryck. Och ja, vi älskar färgklickar! Vi hoppas att våra möbler ska få sprida glädje i ditt hem i många år framöver.</p>
 
             <p className="text-custom-brown">
               Så kom förbi Spinneriet, ta en fika hos någon av våra café-grannar och kika runt. Vi snackar gärna inredning och hjälper dig att hitta de där speciella detaljerna som gör ditt hem till en plats där du verkligen trivs.
