@@ -54,7 +54,7 @@ const HittaHitSection = () => {
                   href="https://www.spinnerietlindome.se/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#0EA5E9] hover:text-[#0EA5E9]/80 transition-colors underline"
+                  className="text-[#0047AB] hover:text-[#0047AB]/80 transition-colors underline"
                 >
                   Spinneriet i Lindome
                 </a>. Vi finns på våning 2.
