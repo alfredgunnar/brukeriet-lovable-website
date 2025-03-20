@@ -11,7 +11,7 @@ const GallerySocialLink = () => {
         href="https://instagram.com/brukeriet"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center bg-custom-terra text-white px-6 py-3 hover:bg-opacity-90 transition-colors mt-4"
+        className="inline-flex items-center bg-[#0EA5E9] text-white px-6 py-3 hover:bg-opacity-90 transition-colors mt-4"
       >
         <Instagram size={20} className="mr-2" />
         brukeriet

@@ -1,3 +1,4 @@
+
 import { MapPin, Mail, Bus, Car } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { Button } from './ui/button';
@@ -46,14 +47,14 @@ const HittaHitSection = () => {
                 Hitta hit
               </h2>
 
-              <div className="w-16 h-[2px] bg-custom-gold"></div>
+              {/* Separator removed */}
 
               <p className="text-custom-brown">
                 Välkommen till vår butik på <a
                   href="https://www.spinnerietlindome.se/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-custom-gold hover:text-custom-terra transition-colors underline"
+                  className="text-[#0EA5E9] hover:text-[#0EA5E9]/80 transition-colors underline"
                 >
                   Spinneriet i Lindome
                 </a>. Vi finns på våning 2.

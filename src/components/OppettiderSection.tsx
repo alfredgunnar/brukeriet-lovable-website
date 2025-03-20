@@ -1,3 +1,4 @@
+
 import { Clock, Instagram } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -46,8 +47,8 @@ const OppettiderSection = () => {
           <h2 className="text-3xl md:text-4xl font-medium mt-4 mb-4 leading-tight text-custom-cream">
             Öppettider
           </h2>
-
-          <div className="w-12 h-[2px] bg-custom-gold mx-auto"></div>
+          
+          {/* Separator removed */}
         </div>
 
         <Card className="max-w-md mx-auto bg-custom-cream/95 backdrop-blur-sm shadow-sm">
@@ -68,7 +69,7 @@ const OppettiderSection = () => {
             <div className="mt-6 pt-4 border-t border-custom-terra/10 text-center">
               
               <p className="text-xs text-custom-brown">Vi har alltid öppet på vår instagram. Där postar vi aktuella saker som händer i butiken och nya möbler som kommer in. Skriv gärna till oss i DM där eller skicka ett mail till info@brukeriet.se så svarar vi så fort vi kan. </p>
-              <a href="https://www.instagram.com/brukeriet" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center mt-2 text-custom-terra hover:text-custom-gold transition-colors">
+              <a href="https://www.instagram.com/brukeriet" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center mt-2 text-[#0EA5E9] hover:text-[#0EA5E9]/80 transition-colors">
                 <Instagram className="h-4 w-4 mr-1" />
                 <span className="text-xs">@brukeriet</span>
               </a>

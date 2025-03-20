@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 const VarDromSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -31,7 +32,7 @@ const VarDromSection = () => {
               Vår vintage-dröm på Spinneriet i Lindome
             </h2>
 
-            <div className="w-16 h-[2px] bg-custom-gold"></div>
+            {/* Separator removed */}
 
             <p className="text-custom-brown">I det gamla Spinneriet från 1907 i Lindome har vi, Olivia &amp; Alfred, öppnat vår drömbutik. Här hittar du en härlig mix av gamla möbler, unika prylar och ny, hållbart producerad interiör.</p>
 
