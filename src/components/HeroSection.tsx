@@ -38,9 +38,9 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative h-full flex flex-col items-center justify-center px-6 text-center">
         <img
-          src="lovable-uploads/439c5560-76bf-49c6-8514-eced0f4e3485.png"
+          src="lovable-uploads/a5bf94d6-3187-43a1-acf3-79bbf4e92bda.png"
           alt="Brukeriet Logo"
-          className="w-[40rem] md:w-[48rem] lg:w-[56rem] mb-10 opacity-0 animate-fade-in drop-shadow-xl"
+          className="w-[20rem] md:w-[24rem] lg:w-[28rem] mb-10 opacity-0 animate-fade-in drop-shadow-xl"
           style={{
             animationDelay: '0.3s',
             animationFillMode: 'forwards'
