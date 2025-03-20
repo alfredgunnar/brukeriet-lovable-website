@@ -32,8 +32,8 @@ const HeroSection = () => {
         }}
       />
 
-      {/* Enhanced overlay with stronger gradient for better text contrast */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* Enhanced overlay with more transparency for better visibility */}
+      <div className="absolute inset-0 bg-black/30" />
 
       {/* Content */}
       <div className="relative h-full flex flex-col items-center justify-center px-6 text-center">
@@ -46,17 +46,6 @@ const HeroSection = () => {
             animationFillMode: 'forwards'
           }}
         />
-
-        <a
-          href="#var-drom"
-          className="px-8 py-3 bg-custom-terra text-white font-medium uppercase tracking-wider shadow-lg hover:bg-custom-terra/90 transition-all transform hover:translate-y-[-2px] focus:ring-2 focus:ring-custom-terra focus:ring-offset-2 opacity-0 animate-fade-in"
-          style={{
-            animationDelay: '0.7s',
-            animationFillMode: 'forwards'
-          }}
-        >
-          Lär Känna Oss
-        </a>
       </div>
     </div>
   );
