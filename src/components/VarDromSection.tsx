@@ -31,7 +31,7 @@ const VarDromSection = () => {
 
             {/* Separator removed */}
 
-            <p className="text-custom-brown">I det gamla Spinneriet från 1907 i Lindome har vi, Olivia & Alfred, öppnat Brukeriet. Här hittar du en handplockad mix av gamla möbler, unika prylar och ny, hållbart producerad inredning. Brukeriet är vår lekplats, där vi får utlopp för vår kreativitet.</p>
+            <p className="text-custom-brown">Vad kul att just du har hittat hit. I det gamla Spinneriet från 1907 i Lindome har vi, Olivia & Alfred, öppnat Brukeriet. Här hittar du en handplockad mix av gamla möbler, unika prylar och ny, hållbart producerad inredning. Brukeriet är vår lekplats, där vi får utlopp för vår kreativitet.</p>
 
             <p className="text-custom-brown">Vi älskar att ge gamla möbler en ny chans. En skvätt linoljefärg, lite nytt tyg eller kanske bara nya beslag – det gör susen! Här testar vi olika kulörer, blandar material och texturer för att skapa unika uttryck. Och ja, vi älskar färgklickar! Vi hoppas att våra möbler ska få sprida glädje i ditt hem i många år framöver.</p>
 
