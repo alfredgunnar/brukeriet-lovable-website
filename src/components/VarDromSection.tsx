@@ -27,9 +27,7 @@ const VarDromSection = () => {
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
         <div className="order-1 lg:order-1">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-terra">
-              Vår vintage-dröm på Spinneriet i Lindome
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-terra">Unik interiör och hållbar design</h2>
 
             {/* Separator removed */}
 
