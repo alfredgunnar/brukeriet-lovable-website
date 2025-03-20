@@ -1,3 +1,4 @@
+
 export interface GalleryPost {
   id: string | number;
   imageUrl: string;
@@ -7,72 +8,42 @@ export interface GalleryPost {
 export const galleryPosts: GalleryPost[] = [
   {
     id: 1,
-    imageUrl: "lovable-uploads/29F86351-37E8-468E-93A7-0F224F0EF290.JPG",
+    imageUrl: "lovable-uploads/a98f0a5d-fabb-42bd-8e73-8cd28702370f.png",
     url: "https://www.instagram.com/brukeriet"
   },
   {
     id: 2,
-    imageUrl: "lovable-uploads/2E09FA20-8ABB-43F4-97C9-1D0251196169.JPG",
+    imageUrl: "lovable-uploads/d93d8b96-ddec-403e-bcb3-73a94d541664.png",
     url: "https://www.instagram.com/brukeriet"
   },
   {
     id: 3,
-    imageUrl: "lovable-uploads/2EA37EB5-DCB1-4FCE-8DC6-29DF2470C3F6.JPG",
+    imageUrl: "lovable-uploads/75cf6058-50c2-4624-b84a-bb97fe4da401.png",
     url: "https://www.instagram.com/brukeriet"
   },
   {
     id: 4,
-    imageUrl: "lovable-uploads/4BA41F26-4E66-47EF-9135-6D3EA49F9376.JPG",
+    imageUrl: "lovable-uploads/05d4db5b-ca8f-47fa-91a7-ef94c080a270.png",
     url: "https://www.instagram.com/brukeriet"
   },
   {
     id: 5,
-    imageUrl: "lovable-uploads/6DF040E5-75B3-4876-834B-32AE31CC29F4.JPG",
+    imageUrl: "lovable-uploads/03a8a78c-eb9c-4456-8a84-c7c58f79a795.png",
     url: "https://www.instagram.com/brukeriet"
   },
   {
     id: 6,
-    imageUrl: "lovable-uploads/9D783DE5-92CE-4840-B73C-3BE6A59C6CC1.JPG",
+    imageUrl: "lovable-uploads/7b2d5bc7-4536-47f7-aabf-307fd73b45f0.png",
     url: "https://www.instagram.com/brukeriet"
   },
   {
     id: 7,
-    imageUrl: "lovable-uploads/9E136025-6A59-449F-BC1E-2DC108372850.JPG",
+    imageUrl: "lovable-uploads/99ca0505-990d-4070-afc5-4661a8a99d97.png",
     url: "https://www.instagram.com/brukeriet"
   },
   {
     id: 8,
-    imageUrl: "lovable-uploads/24C24012-27A8-445B-86C9-0DA508F7BA53.JPG",
-    url: "https://www.instagram.com/brukeriet"
-  },
-  {
-    id: 9,
-    imageUrl: "lovable-uploads/Brukeriet-27.jpg",
-    url: "https://www.instagram.com/brukeriet"
-  },
-  {
-    id: 10,
-    imageUrl: "lovable-uploads/Brukeriet-14.jpg",
-    url: "https://www.instagram.com/brukeriet"
-  },
-  {
-    id: 11,
-    imageUrl: "lovable-uploads/Brukeriet-15.jpg",
-    url: "https://www.instagram.com/brukeriet"
-  },
-  {
-    id: 12,
-    imageUrl: "lovable-uploads/Brukeriet-21.jpg",
-    url: "https://www.instagram.com/brukeriet"
-  },
-  {
-    id: 13,
-    imageUrl: "lovable-uploads/Brukeriet-25.jpg",
-    url: "https://www.instagram.com/brukeriet"
-  },
-  {
-    id: 14,
-    imageUrl: "lovable-uploads/Brukeriet-26.jpg",
+    imageUrl: "lovable-uploads/80fdf4af-8d73-435f-857c-6eff24a9244b.png",
     url: "https://www.instagram.com/brukeriet"
   }
 ];

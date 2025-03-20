@@ -25,7 +25,7 @@ const HeroSection = () => {
         ref={containerRef}
         className="absolute inset-0 w-full h-full"
         style={{
-          backgroundImage: 'url(lovable-uploads/Brukeriet-25.jpg)',
+          backgroundImage: 'url(lovable-uploads/80fdf4af-8d73-435f-857c-6eff24a9244b.png)',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           transform: 'translateZ(0)'
