@@ -66,9 +66,7 @@ const OppettiderSection = () => {
             </div>
 
             <div className="mt-6 pt-4 border-t border-custom-terra/10 text-center">
-              <p className="text-xs text-custom-brown">
-                Öppettider kan justeras vid högtider.
-              </p>
+              
               <p className="text-xs text-custom-brown">Vi har alltid öppet på vår instagram. Där postar vi aktuella saker som händer i butiken och nya möbler som kommer in. Skriv gärna till oss i DM där eller skicka ett mail till info@brukeriet.se så svarar vi så fort vi kan. </p>
               <a href="https://www.instagram.com/brukeriet" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center mt-2 text-custom-terra hover:text-custom-gold transition-colors">
                 <Instagram className="h-4 w-4 mr-1" />
