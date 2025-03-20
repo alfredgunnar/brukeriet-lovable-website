@@ -35,7 +35,7 @@
     --input: 39 26% 75%;
     --ring: 13 53% 31%;
 
-    --radius: 0;
+    --radius: 0.5rem;
   }
 
   * {
@@ -64,7 +64,7 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    @apply bg-custom-terra/50 rounded-none transition-colors;
+    @apply bg-custom-terra/50 rounded-full transition-colors;
   }
   
   ::-webkit-scrollbar-thumb:hover {

@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '@/components/Navbar';
@@ -7,7 +6,7 @@ import VarDromSection from '@/components/VarDromSection';
 import GallerySection from '@/components/GallerySection';
 import OppettiderSection from '@/components/OppettiderSection';
 import HittaHitSection from '@/components/HittaHitSection';
-import FeatureGrid from '@/components/FeatureGrid';
+import FullWidthImageSection from '@/components/FullWidthImageSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -22,17 +21,17 @@ const Index = () => {
         <title>Brukeriet - Vintage, återbruk & svensk design | Spinneriet Lindome</title>
         <meta name="description" content="Upptäck Brukeriet, en vintage- och återbruksbutik i det anrika Spinneriet i Lindome. Vi erbjuder noga utvalda vintagefynd och hållbar inredning." />
       </Helmet>
-      <div className="min-h-screen flex flex-col bg-white">
+      <div className="min-h-screen flex flex-col">
         <header>
           <Navbar />
         </header>
         <main>
           <HeroSection />
-          <FeatureGrid />
           <VarDromSection />
           <GallerySection />
           <OppettiderSection />
           <HittaHitSection />
+          <FullWidthImageSection />
         </main>
         <Footer />
       </div>
