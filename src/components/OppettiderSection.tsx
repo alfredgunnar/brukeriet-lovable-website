@@ -39,7 +39,7 @@ const OppettiderSection = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <img src="lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png" alt="Background" className="w-full h-full object-cover opacity-20" />
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
       {/* Content with relative positioning to appear above the background */}
