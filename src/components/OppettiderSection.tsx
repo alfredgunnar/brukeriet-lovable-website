@@ -1,28 +1,21 @@
 import { Clock, Instagram } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-
 const OppettiderSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          sectionRef.current?.classList.add('in-view');
-        }
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.2,
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        sectionRef.current?.classList.add('in-view');
       }
-    );
-
+    }, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.2
+    });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
@@ -31,25 +24,19 @@ const OppettiderSection = () => {
   }, []);
 
   // Only show open days
-  const hourGroups = [
-    { days: 'Torsdag - Lördag', hours: '11:00 - 16:00' },
-    { days: 'Söndag', hours: '11:00 - 15:00' },
-  ];
-
-  return (
-    <section
-      id="oppettider"
-      ref={sectionRef}
-      className="section py-16 px-6 bg-custom-brown relative"
-      style={{ '--section-index': '1' } as React.CSSProperties}
-    >
+  const hourGroups = [{
+    days: 'Torsdag - Lördag',
+    hours: '11:00 - 16:00'
+  }, {
+    days: 'Söndag',
+    hours: '11:00 - 15:00'
+  }];
+  return <section id="oppettider" ref={sectionRef} className="section py-16 px-6 bg-custom-brown relative" style={{
+    '--section-index': '1'
+  } as React.CSSProperties}>
       {/* Background image with overlay */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <img
-          src="lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png"
-          alt="Background"
-          className="w-full h-full object-cover opacity-20"
-        />
+        <img src="lovable-uploads/994a0654-9951-465f-8427-7a8265a6521c.png" alt="Background" className="w-full h-full object-cover opacity-20" />
         <div className="absolute inset-0 bg-custom-brown/80"></div>
       </div>
 
@@ -72,30 +59,18 @@ const OppettiderSection = () => {
             </div>
 
             <div className="space-y-3">
-              {hourGroups.map((group) => (
-                <div
-                  key={group.days}
-                  className="flex justify-between items-center py-2 border-b border-custom-terra/10 last:border-b-0"
-                >
+              {hourGroups.map(group => <div key={group.days} className="flex justify-between items-center py-2 border-b border-custom-terra/10 last:border-b-0">
                   <span className="font-medium text-custom-brown">{group.days}</span>
                   <span className="text-custom-terra">{group.hours}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <div className="mt-6 pt-4 border-t border-custom-terra/10 text-center">
               <p className="text-xs text-custom-brown">
                 Öppettider kan justeras vid högtider.
               </p>
-              <p className="text-xs text-custom-brown">
-                Följ oss på Instagram för aktuell information.
-              </p>
-              <a
-                href="https://www.instagram.com/brukeriet"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center mt-2 text-custom-terra hover:text-custom-gold transition-colors"
-              >
+              <p className="text-xs text-custom-brown">Vi har alltid öppet på vår instagram. Där postar vi aktuella saker som händer i butiken och nya möbler som kommer in. Skriv gärna till oss i DM där eller skicka ett mail till info@brukeriet.se så svarar vi så fort vi kan. </p>
+              <a href="https://www.instagram.com/brukeriet" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center mt-2 text-custom-terra hover:text-custom-gold transition-colors">
                 <Instagram className="h-4 w-4 mr-1" />
                 <span className="text-xs">@brukeriet</span>
               </a>
@@ -103,8 +78,6 @@ const OppettiderSection = () => {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default OppettiderSection;
