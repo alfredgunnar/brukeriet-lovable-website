@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Navbar = () => {
@@ -32,8 +32,8 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 ease-in-out px-4 lg:px-8",
         scrolled
-          ? "py-3 bg-white/90 backdrop-blur-md shadow-sm opacity-100"
-          : "py-6 bg-transparent opacity-0 pointer-events-none"
+          ? "py-3 bg-white/90 backdrop-blur-md shadow-sm"
+          : "py-6 bg-white/80 backdrop-blur-sm"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">

@@ -19,7 +19,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative h-[600px] md:h-[700px] w-full overflow-hidden">
+    <div className="relative h-[450px] md:h-[700px] w-full overflow-hidden">
       {/* Background image with parallax effect */}
       <div
         ref={containerRef}
