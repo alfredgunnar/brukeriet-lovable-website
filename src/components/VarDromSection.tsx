@@ -20,7 +20,7 @@ const VarDromSection = () => {
       }
     };
   }, []);
-  return <section id="var-drom" ref={sectionRef} className="section py-24 px-6 bg-custom-cream" style={{
+  return <section id="lar-kanna-oss" ref={sectionRef} className="section py-24 px-6 bg-custom-cream" style={{
     '--section-index': '0'
   } as React.CSSProperties}>
     <div className="max-w-7xl mx-auto">

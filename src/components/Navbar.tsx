@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -22,7 +21,7 @@ const Navbar = () => {
   }, [scrolled]);
 
   const navItems = [
-    { name: 'Vår dröm', href: '#var-drom' },
+    { name: 'Lär känna oss', href: '#lar-kanna-oss' },
     { name: 'Öppettider', href: '#oppettider' },
     { name: 'Hitta hit', href: '#hitta-hit' },
   ];
