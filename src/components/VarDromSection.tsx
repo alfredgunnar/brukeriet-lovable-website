@@ -64,10 +64,7 @@ const VarDromSection = () => {
               <img src="lovable-uploads/BE6E6EFD-88A2-42E1-BB87-7852661F3C6E.JPG" alt="Vintagemöbler i modern inredning" className="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" width="700" height="350" decoding="async" />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
             </div>
-            <div className="relative h-[200px] md:h-[250px] w-full image-container rounded-lg overflow-hidden shadow-lg md:col-span-2">
-              <img src="lovable-uploads/4BA41F26-4E66-47EF-9135-6D3EA49F9376.JPG" alt="Eleganta vintage designföremål" className="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" width="1400" height="250" decoding="async" />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
-            </div>
+            {/* Bottom image removed */}
           </div>
         </div>
       </div>
