@@ -1,3 +1,4 @@
+
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { CarouselItem } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -11,8 +12,8 @@ interface GalleryCarouselItemProps {
 const GalleryCarouselItem = ({ post, isMobile }: GalleryCarouselItemProps) => {
   return (
     <CarouselItem key={post.id} className="pl-4 md:pl-6 md:basis-1/2 lg:basis-1/3">
-      <div className="rounded-lg shadow-lg group overflow-hidden">
-        <AspectRatio ratio={3 / 4} className="bg-muted">
+      <div className="shadow-lg group overflow-hidden">
+        <AspectRatio ratio={3 / 4} className="bg-gray-200">
           <div className="w-full h-full relative overflow-hidden">
             <img
               src={post.imageUrl}
@@ -27,10 +28,10 @@ const GalleryCarouselItem = ({ post, isMobile }: GalleryCarouselItemProps) => {
             {/* Touch overlay indicator visible only on mobile */}
             {isMobile && (
               <div className="absolute inset-0 flex items-center justify-between pointer-events-none px-2 opacity-70">
-                <div className="bg-white/30 p-1 rounded-full">
+                <div className="bg-white/30 p-1">
                   <ChevronLeft size={20} className="text-white" />
                 </div>
-                <div className="bg-white/30 p-1 rounded-full">
+                <div className="bg-white/30 p-1">
                   <ChevronRight size={20} className="text-white" />
                 </div>
               </div>

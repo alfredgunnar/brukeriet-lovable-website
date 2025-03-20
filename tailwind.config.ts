@@ -67,7 +67,7 @@ export default {
 					terra: '#7A3A24',
 					gold: '#B17E3F',
 					brown: '#3E312A',
-					cream: '#D8D3BA'
+					cream: '#FFFFFF' // Changed from cream color to white
 				}
 			},
 			fontFamily: {
@@ -75,9 +75,9 @@ export default {
 				serif: ['Lora', 'serif']
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				lg: '0', // Set to 0 to remove rounded corners
+				md: '0', // Set to 0 to remove rounded corners
+				sm: '0'  // Set to 0 to remove rounded corners
 			},
 			keyframes: {
 				'accordion-down': {

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -31,7 +32,7 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 ease-in-out px-4 lg:px-8",
         scrolled
-          ? "py-3 bg-custom-cream/90 backdrop-blur-md shadow-sm opacity-100"
+          ? "py-3 bg-white/90 backdrop-blur-md shadow-sm opacity-100"
           : "py-6 bg-transparent opacity-0 pointer-events-none"
       )}
     >
@@ -50,17 +51,17 @@ const Navbar = () => {
         {isMobile ? (
           <Sheet>
             <SheetTrigger asChild>
-              <button className="p-2 text-custom-brown">
+              <button className="p-2 text-gray-800">
                 <Menu size={24} />
               </button>
             </SheetTrigger>
-            <SheetContent className="bg-custom-cream">
+            <SheetContent className="bg-white">
               <div className="flex flex-col space-y-6 pt-10">
                 {navItems.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-lg font-medium uppercase tracking-wide text-custom-brown hover:text-[#0047AB] transition-colors"
+                    className="text-lg font-medium uppercase tracking-wide text-gray-800 hover:text-[#0047AB] transition-colors"
                   >
                     {item.name}
                   </a>
@@ -74,7 +75,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium uppercase tracking-wide text-custom-brown hover:text-[#0047AB] transition-colors"
+                className="text-sm font-medium uppercase tracking-wide text-gray-800 hover:text-[#0047AB] transition-colors"
               >
                 {item.name}
               </a>

@@ -54,3 +54,12 @@
 .group:hover .group-hover\:translate-y-0 {
   transform: translateY(0);
 }
+
+/* Override for rounded corners */
+.rounded, .rounded-md, .rounded-lg, .rounded-xl, .rounded-2xl, .rounded-full {
+  border-radius: 0 !important;
+}
+
+button, a, input, textarea, select, .card, .hover\:rounded-md, img {
+  border-radius: 0 !important;
+}
