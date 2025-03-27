@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 const VarDromSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -27,7 +28,7 @@ const VarDromSection = () => {
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
         <div className="order-1 lg:order-1">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-terra">Hejhej! 👋🏻</h2>
+            <h2 className="text-3xl md:text-4xl font-medium leading-tight text-custom-terra">Hejhej! 👋🏻</h2>
 
             {/* Separator removed */}
 
@@ -52,11 +53,27 @@ const VarDromSection = () => {
         <div className="order-2 lg:order-2 w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="relative h-[350px] w-full image-container rounded-lg overflow-hidden shadow-lg">
-              <img src="lovable-uploads/E7549DA8-37F2-4D42-82FD-334139C2ADF2.JPG" alt="Vintage interiör med designmöbler och inredning" className="absolute inset-0 w-full h-full object-cover" loading="lazy" width="700" height="350" decoding="async" />
+              <img 
+                src="lovable-uploads/E7549DA8-37F2-4D42-82FD-334139C2ADF2.JPG" 
+                alt="Inredningsbutik i Lindome med vintagemöbler" 
+                className="absolute inset-0 w-full h-full object-cover" 
+                loading="lazy" 
+                width="700" 
+                height="350" 
+                decoding="async" 
+              />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
             </div>
             <div className="relative h-[350px] w-full image-container rounded-lg overflow-hidden shadow-lg">
-              <img src="lovable-uploads/BE6E6EFD-88A2-42E1-BB87-7852661F3C6E.JPG" alt="Vintagemöbler i modern inredning" className="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" width="700" height="350" decoding="async" />
+              <img 
+                src="lovable-uploads/BE6E6EFD-88A2-42E1-BB87-7852661F3C6E.JPG" 
+                alt="Vintage inredning och återbruk i Spinneriet Lindome" 
+                className="absolute inset-0 w-full h-full object-cover object-center" 
+                loading="lazy" 
+                width="700" 
+                height="350" 
+                decoding="async" 
+              />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-custom-brown/10"></div>
             </div>
             {/* Bottom image removed */}
