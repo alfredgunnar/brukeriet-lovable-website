@@ -1,3 +1,4 @@
+
 import { useRef } from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useElementVisibility } from '@/hooks/use-element-visibility';
@@ -29,8 +30,7 @@ const GallerySection = () => {
             opts={{
               align: "start",
               loop: true,
-              dragFree: false,
-              skipSnaps: false,
+              dragFree: true,
               containScroll: "trimSnaps"
             }}
             className="w-full"

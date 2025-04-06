@@ -17,7 +17,7 @@ const GalleryCarouselItem = ({ post, isMobile }: GalleryCarouselItemProps) => {
           <div className="w-full h-full relative overflow-hidden">
             <img
               src={post.imageUrl}
-              alt="Butiken"
+              alt={`Gallery image ${post.id}`}
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               loading="lazy"
               width="400"
@@ -27,11 +27,11 @@ const GalleryCarouselItem = ({ post, isMobile }: GalleryCarouselItemProps) => {
 
             {/* Touch overlay indicator visible only on mobile */}
             {isMobile && (
-              <div className="absolute inset-0 flex items-center justify-between pointer-events-none px-2 opacity-70">
-                <div className="bg-white/30 p-1">
+              <div className="absolute inset-0 flex items-center justify-between px-2 opacity-70 pointer-events-none">
+                <div className="bg-white/30 p-1 rounded-full">
                   <ChevronLeft size={20} className="text-white" />
                 </div>
-                <div className="bg-white/30 p-1">
+                <div className="bg-white/30 p-1 rounded-full">
                   <ChevronRight size={20} className="text-white" />
                 </div>
               </div>
