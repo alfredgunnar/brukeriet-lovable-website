@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center relative z-10">
         <div className="mb-8">
           <img
-            src="lovable-uploads/Brukeriet_Svart-15.png"
+            src="lovable-uploads/Brukeriet_Brun_vetegra.png"
             alt="Brukeriet Badge"
             className="h-64 md:h-72 object-contain"
           />
