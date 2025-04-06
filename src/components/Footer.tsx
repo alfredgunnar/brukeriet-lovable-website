@@ -13,7 +13,6 @@ const Footer = () => {
             className="h-64 md:h-72 object-contain"
           />
         </div>
-
         <p className="text-custom-brown text-sm">
           &copy; {currentYear} Brukeriet Gunnargård AB
         </p>
