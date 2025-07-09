@@ -25,7 +25,7 @@ const OppettiderSection = () => {
 
   // Only show open days
   const hourGroups = [{
-    days: 'Torsdag - Lördag',
+    days: 'Onsdag - Lördag',
     hours: '11:00 - 16:00'
   }, {
     days: 'Söndag',
